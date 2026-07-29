@@ -65,7 +65,7 @@ export default function ResultsComparison() {
                   {/* proTutor Bar */}
                   <div className="space-y-1">
                     <div className="flex justify-between text-xs font-semibold text-zinc-700">
-                      <span className="text-accent-blue font-extrabold">Students with proper </span>
+                      <span className="text-accent-blue font-extrabold">Tutored students </span>
                       <span>{item.proTutor.label}</span>
                     </div>
                     <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden">
