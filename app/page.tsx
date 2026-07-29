@@ -41,7 +41,7 @@ export default function Home() {
         <HowWeWork />
 
         {/* 8. Student/Parent Testimonials */}
-        <Testimonials />
+        {/*<Testimonials />*/}
 
         {/* 9. Cohort Outcomes (Case Studies) */}
         <CaseStudies />

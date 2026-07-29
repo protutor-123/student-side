@@ -23,8 +23,8 @@ export async function submitParentPopup(
     // 2. Extract and trim fields
     const mobile = (formData.get('mobile') as string || '').trim();
     const email = (formData.get('email') as string || '').trim();
-    const board = (formData.get('board') as string || '').trim();
-    const subjects = formData.getAll('subjects').map((s) => String(s).trim()).filter(Boolean).join(', ');
+    const grade = (formData.get('grade') as string || '').trim();
+    const curriculum = (formData.get('curriculum') as string || '').trim();
 
     // 3. Validation Rules
     if (!mobile) {
@@ -41,8 +41,12 @@ export async function submitParentPopup(
       return { success: false, error: 'Please enter a valid email address.' };
     }
 
-    if (!board) {
-      return { success: false, error: 'Please select your board.' };
+    if (!grade) {
+      return { success: false, error: 'Grade is required.' };
+    }
+
+    if (!curriculum) {
+      return { success: false, error: 'Curriculum is required.' };
     }
 
     // 4. Fetch the webhook URL (same sheet/webhook as the main form; routed by formType)
@@ -65,8 +69,8 @@ export async function submitParentPopup(
         formType: 'parent-popup',
         mobile,
         email,
-        board,
-        subjects,
+        grade,
+        curriculum,
       }).toString(),
     });
 

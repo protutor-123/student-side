@@ -27,7 +27,7 @@ export default function ResultsComparison() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Layout: Grid splits on desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Heading/Marketing */}
           <div className="lg:col-span-5 text-center lg:text-left">
             <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">The Results</h2>
@@ -37,7 +37,7 @@ export default function ResultsComparison() {
             <p className="mt-4 text-base text-zinc-600 leading-relaxed">
               We track progress continuously to ensure students are actually understanding the material and achieving their targets. Our methods produce results that far outshine standard national averages.
             </p>
-            
+
             {/* Short Callout card */}
             <div className="mt-8 rounded-2xl bg-zinc-50 border border-zinc-100 p-6 flex items-start gap-4 text-left">
               <div className="rounded-full bg-accent-blue/10 p-2 shrink-0 text-accent-blue mt-1">
@@ -59,13 +59,13 @@ export default function ResultsComparison() {
             {comparisons.map((item, index) => (
               <div key={index} className="space-y-3">
                 <span className="text-sm font-bold text-navy">{item.metric}</span>
-                
+
                 {/* Comparison Bar Group */}
                 <div className="space-y-2.5">
                   {/* proTutor Bar */}
                   <div className="space-y-1">
                     <div className="flex justify-between text-xs font-semibold text-zinc-700">
-                      <span className="text-accent-blue font-extrabold">proTutor Students</span>
+                      <span className="text-accent-blue font-extrabold">Students with proper </span>
                       <span>{item.proTutor.label}</span>
                     </div>
                     <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden">

@@ -5,9 +5,6 @@ import { submitParentPopup, ParentPopupActionState } from '@/app/actions/submit-
 
 const DISMISSED_KEY = 'parentPopupDismissed';
 
-const BOARDS = ['CBSE', 'ICSE', 'IB', 'IGCSE', 'State Board', 'Other'];
-const SUBJECTS = ['Mathematics', 'Science', 'English', 'Social Studies', 'Computer Science', 'Second Language'];
-
 const initialState: ParentPopupActionState = {
   success: false,
 };
@@ -131,50 +128,34 @@ export default function ParentPopup() {
                   />
                 </div>
 
-                {/* Board */}
+                {/* Grade */}
                 <div>
-                  <label htmlFor="popup-board" className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
-                    Board
+                  <label htmlFor="popup-grade" className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                    Grade
                   </label>
-                  <select
-                    id="popup-board"
-                    name="board"
+                  <input
+                    type="text"
+                    id="popup-grade"
+                    name="grade"
                     required
-                    defaultValue=""
-                    className="w-full bg-navy-dark border border-navy-light/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all"
-                  >
-                    <option value="" disabled>
-                      Select board
-                    </option>
-                    {BOARDS.map((board) => (
-                      <option key={board} value={board}>
-                        {board}
-                      </option>
-                    ))}
-                  </select>
+                    placeholder="e.g. Grade 10"
+                    className="w-full bg-navy-dark border border-navy-light/60 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all"
+                  />
                 </div>
 
-                {/* Subjects (optional) */}
+                {/* Curriculum */}
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
-                    Subjects <span className="normal-case font-medium text-zinc-500">(optional)</span>
+                  <label htmlFor="popup-curriculum" className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                    Curriculum
                   </label>
-                  <div className="grid grid-cols-2 gap-2">
-                    {SUBJECTS.map((subject) => (
-                      <label
-                        key={subject}
-                        className="flex items-center gap-2 rounded-lg border border-navy-light/60 bg-navy-dark px-3 py-2 text-xs font-semibold text-zinc-300 cursor-pointer hover:border-accent-blue/50 transition-colors"
-                      >
-                        <input
-                          type="checkbox"
-                          name="subjects"
-                          value={subject}
-                          className="rounded border-navy-light bg-navy-dark text-accent-blue focus:ring-accent-blue focus:ring-offset-0"
-                        />
-                        {subject}
-                      </label>
-                    ))}
-                  </div>
+                  <input
+                    type="text"
+                    id="popup-curriculum"
+                    name="curriculum"
+                    required
+                    placeholder="e.g. CBSE, IB, IGCSE"
+                    className="w-full bg-navy-dark border border-navy-light/60 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all"
+                  />
                 </div>
 
                 {state?.error && (
