@@ -5,8 +5,8 @@ import BoardsSubjects from './components/BoardsSubjects';
 import WhyChooseUs from './components/WhyChooseUs';
 import ResultsComparison from './components/ResultsComparison';
 import HowWeWork from './components/HowWeWork';
-import Testimonials from './components/Testimonials';
-import CaseStudies from './components/CaseStudies';
+// import Testimonials from './components/Testimonials';
+//import CaseStudies from './components/CaseStudies';
 import About from './components/About';
 import Footer from './components/Footer';
 import ParentPopup from './components/ParentPopup';
@@ -44,7 +44,7 @@ export default function Home() {
         {/*<Testimonials />*/}
 
         {/* 9. Cohort Outcomes (Case Studies) */}
-        <CaseStudies />
+        {/*<CaseStudies />*/}
 
         {/* 10. Brand Story & Values (About) */}
         <About />
