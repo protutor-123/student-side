@@ -1,11 +1,6 @@
 export default function CaseStudies() {
   const cases = [
-    {
-      student: 'Liam M. — 11th Grade',
-      outcome: 'Score Boost: +210 SAT Points',
-      summary: 'Focused on advanced chemistry concepts and critical SAT reading strategies over a 12-week course to secure a 1540 total score.',
-      tag: 'Test Prep Success',
-    },
+
     {
       student: 'Aria S. — 9th Grade',
       outcome: 'From C- to A in Honors Algebra',
@@ -23,7 +18,7 @@ export default function CaseStudies() {
   return (
     <section className="bg-off-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">Case Studies</h2>
