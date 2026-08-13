@@ -158,8 +158,8 @@ export const BOARDS: Board[] = [
     ],
   },
   {
-    id: 'ifc',
-    name: 'IFC',
+    id: 'isc',
+    name: 'ISC',
     groups: [
       { label: 'Levels', items: ['Foundation', 'Advanced'] },
       {
