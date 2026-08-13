@@ -26,7 +26,7 @@ export default function CaseStudies() {
             Real Student Outcomes
           </p>
           <p className="mt-4 text-lg text-zinc-600">
-            A look at the specific paths and scores achieved by our proTutor cohorts.
+            A look at the specific paths and scores achieved by our proTutor365 cohorts.
           </p>
         </div>
 

@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Services', href: '#services' },
+    { label: 'Curriculum', href: '#boards' },
     { label: 'Results', href: '#results' },
     { label: 'How We Work', href: '#how-we-work' },
     { label: 'About', href: '#about' },
@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo / Wordmark */}
           <div className="flex-shrink-0">
             <a href="#" className="text-2xl font-bold tracking-tight text-navy">
-              pro<span className="text-accent-blue font-extrabold">Tutor</span>
+              pro<span className="text-accent-blue font-extrabold">Tutor365</span>
             </a>
           </div>
 

@@ -82,13 +82,13 @@ export default function ParentPopup() {
           ) : (
             <>
               <span className="inline-block rounded-full bg-accent-blue/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-blue">
-                Limited Time
+                Limited Spots
               </span>
               <h3 id="parent-popup-heading" className="mt-4 text-2xl font-extrabold tracking-tight leading-tight">
-                First 10 sign-ups get an exclusive discount!
+                First 10 sign-ups every month get an exclusive discount!
               </h3>
               <p className="mt-2 text-sm text-zinc-300">
-                Parents — leave your details and we&apos;ll lock in your spot.
+                Only 10 spots per month — leave your details and we&apos;ll lock in yours.
               </p>
 
               <form ref={formRef} action={formAction} className="mt-6 space-y-4">

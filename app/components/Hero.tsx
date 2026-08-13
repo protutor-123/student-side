@@ -8,10 +8,7 @@ const BENEFITS = [
 
 export default function Hero() {
   return (
-    <section
-      id="get-started"
-      className="relative overflow-hidden scroll-mt-16 bg-white pt-12 pb-20 lg:pt-16 lg:pb-24"
-    >
+    <section className="relative overflow-hidden bg-white pt-12 pb-20 lg:pt-16 lg:pb-24">
       {/* Decorative background blobs */}
       <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] rounded-full bg-accent-blue/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] rounded-full bg-navy/5 blur-3xl" />
@@ -55,8 +52,12 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Lead capture form */}
-          <div className="mx-auto w-full max-w-[520px] lg:col-span-6 lg:max-w-none">
+          {/* Right Column: Lead capture form — also the #get-started scroll target
+              so mobile lands on the form itself, not the top of the hero copy. */}
+          <div
+            id="get-started"
+            className="mx-auto w-full max-w-[520px] scroll-mt-24 lg:col-span-6 lg:max-w-none lg:scroll-mt-20"
+          >
             <LeadForm />
           </div>
         </div>

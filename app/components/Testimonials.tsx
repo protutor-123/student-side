@@ -1,7 +1,7 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "proTutor transformed my son's attitude towards math. His grades went from a C- to an A in just three months, and he actually looks forward to his sessions.",
+      quote: "proTutor365 transformed my son's attitude towards math. His grades went from a C- to an A in just three months, and he actually looks forward to his sessions.",
       name: "Sarah Jenkins",
       role: "Parent of 10th Grader",
       initials: "SJ",

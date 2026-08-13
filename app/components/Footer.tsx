@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Logo / Tagline Column */}
           <div className="md:col-span-4 flex flex-col justify-start space-y-4">
             <a href="#" className="text-2xl font-bold tracking-tight text-white">
-              pro<span className="text-accent-blue font-extrabold">Tutor</span>
+              pro<span className="text-accent-blue font-extrabold">Tutor365</span>
             </a>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
               Empowering students to achieve their full academic potential through highly-individualized 1-on-1 tutoring.
@@ -89,7 +89,7 @@ export default function Footer() {
         {/* Bottom copyright / legal row */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 gap-4">
           <p className="text-xs text-zinc-600">
-            &copy; {new Date().getFullYear()} proTutor Education Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} proTutor365 Education Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 text-xs text-zinc-600">
             <a href="#" className="hover:text-zinc-400">Privacy Policy</a>
