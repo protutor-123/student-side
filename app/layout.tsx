@@ -72,6 +72,22 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EducationalOrganization',
+              name: 'proTutor360',
+              url: SITE_URL,
+              description: SITE_DESCRIPTION,
+              areaServed: {
+                '@type': 'Country',
+                name: 'United Arab Emirates',
+              },
+            }),
+          }}
+        />
         {children}
         <WhatsAppButton />
       </body>
