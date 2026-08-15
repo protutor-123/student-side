@@ -13,9 +13,52 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = 'https://protutor360.com';
+const SITE_TITLE = 'proTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More';
+const SITE_DESCRIPTION =
+  "Personalized 1-on-1 online tutoring for students in the UAE across IB, IGCSE, CBSE, ICSE and more. Expert mentors, custom learning pathways, and proven results.";
+
 export const metadata: Metadata = {
-  title: "proTutor360 | Premium Tutoring & Test Prep for Academic Success",
-  description: "Empower your child with proTutor360's expert academic tutoring, test preparation, and skill-building programs. Personalized pathways designed to boost grades, scores, and confidence.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  keywords: [
+    'online tutoring UAE',
+    'IB tutors Dubai',
+    'IGCSE tutoring Abu Dhabi',
+    'CBSE tutors UAE',
+    'ICSE online tuition',
+    'home tutors Dubai',
+    'online tuition Sharjah',
+    'test prep UAE',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: '/',
+    siteName: 'proTutor360',
+    locale: 'en_AE',
+    type: 'website',
+    images: [
+      {
+        url: '/hero-illustration.jpg',
+        alt: 'proTutor360 online tutoring',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ['/hero-illustration.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
