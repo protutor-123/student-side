@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "proTutor365 | Premium Tutoring & Test Prep for Academic Success",
-  description: "Empower your child with proTutor365's expert academic tutoring, test preparation, and skill-building programs. Personalized pathways designed to boost grades, scores, and confidence.",
+  title: "proTutor360 | Premium Tutoring & Test Prep for Academic Success",
+  description: "Empower your child with proTutor360's expert academic tutoring, test preparation, and skill-building programs. Personalized pathways designed to boost grades, scores, and confidence.",
 };
 
 export default function RootLayout({

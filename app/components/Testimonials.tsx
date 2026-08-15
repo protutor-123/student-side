@@ -1,7 +1,7 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "proTutor365 transformed my son's attitude towards math. His grades went from a C- to an A in just three months, and he actually looks forward to his sessions.",
+      quote: "proTutor360 transformed my son's attitude towards math. His grades went from a C- to an A in just three months, and he actually looks forward to his sessions.",
       name: "Sarah Jenkins",
       role: "Parent of 10th Grader",
       initials: "SJ",
@@ -23,7 +23,7 @@ export default function Testimonials() {
   return (
     <section className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">Success Stories</h2>

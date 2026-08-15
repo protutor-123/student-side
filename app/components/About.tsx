@@ -33,15 +33,15 @@ export default function About() {
     <section id="about" className="bg-white py-20 lg:py-28 scroll-mt-16 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
-          
+
           {/* Left Column: Philosophy Description */}
           <div className="lg:col-span-5 text-center lg:text-left">
-            <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">About proTutor365</span>
+            <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">About proTutor360</span>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
               Our Story & Philosophy
             </h2>
             <p className="mt-6 text-zinc-600 leading-relaxed text-base">
-              Standard classrooms often struggle to address the unique pace and style of individual learners. We founded proTutor365 to close that gap. By combining premium materials with handpicked, compassionate mentors, we build custom pathways that unlock every student’s natural potential.
+              Standard classrooms often struggle to address the unique pace and style of individual learners. We founded proTutor360 to close that gap. By combining premium materials with handpicked, compassionate mentors, we build custom pathways that unlock every student’s natural potential.
             </p>
             <p className="mt-4 text-zinc-600 leading-relaxed text-base">
               Whether your child needs support catching up on complex concepts or enrichment to push ahead, our structured methodologies ensure they develop the confidence to succeed independently.

@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo / Wordmark */}
           <div className="flex-shrink-0">
             <a href="#" className="text-2xl font-bold tracking-tight text-navy">
-              pro<span className="text-accent-blue font-extrabold">Tutor365</span>
+              pro<span className="text-accent-blue font-extrabold">Tutor360</span>
             </a>
           </div>
 

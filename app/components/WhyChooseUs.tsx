@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
 
           <div className="rounded-[2rem] border-2 border-amber-300 bg-off-white p-8 sm:p-12 shadow-[0_0_45px_rgba(252,211,77,0.35)]">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-navy leading-tight">
-              Why Choose proTutor365?
+              Why Choose proTutor360?
             </h2>
 
             <ul className="mt-8 space-y-5">
