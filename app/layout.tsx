@@ -81,6 +81,12 @@ export default function RootLayout({
               name: 'proTutor360',
               url: SITE_URL,
               description: SITE_DESCRIPTION,
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Executive Tower, Business Bay',
+                addressLocality: 'Dubai',
+                addressCountry: 'AE',
+              },
               areaServed: {
                 '@type': 'Country',
                 name: 'United Arab Emirates',
