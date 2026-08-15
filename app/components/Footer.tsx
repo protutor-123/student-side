@@ -65,9 +65,9 @@ export default function Footer() {
           <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
             {links.map((col, idx) => (
               <div key={idx} className="space-y-4">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-white">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-white">
                   {col.title}
-                </h4>
+                </h3>
                 <ul className="space-y-2.5">
                   {col.items.map((item, itemIdx) => (
                     <li key={itemIdx}>
