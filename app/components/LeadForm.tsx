@@ -2,7 +2,7 @@
 
 import { useActionState, useEffect, useRef, useState } from 'react';
 import { submitLead, ActionState } from '@/app/actions/submit-lead';
-import { whatsappHref } from './WhatsAppButton';
+import { whatsappHref } from '../lib/whatsapp';
 
 const initialState: ActionState = {
   success: false,

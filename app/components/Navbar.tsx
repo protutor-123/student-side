@@ -1,16 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { whatsappHref } from './WhatsAppButton';
+import { whatsappHref } from '../lib/whatsapp';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Curriculum', href: '#boards' },
-    { label: 'Results', href: '#results' },
-    { label: 'How We Work', href: '#how-we-work' },
-    { label: 'About', href: '#about' },
+    { label: 'Curriculum', href: '/#boards' },
+    { label: 'Results', href: '/#results' },
+    { label: 'How We Work', href: '/#how-we-work' },
+    { label: 'About', href: '/#about' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -19,7 +20,7 @@ export default function Navbar() {
         <div className="flex h-18 items-center justify-between">
           {/* Logo / Wordmark */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold tracking-tight text-navy">
+            <a href="/" className="text-2xl font-bold tracking-tight text-navy">
               pro<span className="text-accent-blue font-extrabold">Tutor360</span>
             </a>
           </div>
@@ -52,7 +53,7 @@ export default function Navbar() {
               </svg>
             </a>
             <a
-              href="#get-started"
+              href="/#get-started"
               className="inline-flex items-center justify-center rounded-lg bg-accent-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent-blue-hover hover:scale-[1.02] active:scale-[0.98]"
             >
               Get Started
@@ -100,7 +101,7 @@ export default function Navbar() {
           ))}
           <div className="pt-4 pb-2 border-t border-zinc-100 mt-2 flex items-center gap-3">
             <a
-              href="#get-started"
+              href="/#get-started"
               onClick={() => setIsOpen(false)}
               className="flex-1 block text-center rounded-lg bg-accent-blue py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-blue-hover"
             >

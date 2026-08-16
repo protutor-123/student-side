@@ -1,4 +1,4 @@
-import { whatsappHref } from './WhatsAppButton';
+import { whatsappHref } from '../lib/whatsapp';
 
 const SOCIALS = [
   {
@@ -39,17 +39,17 @@ export default function Footer() {
     {
       title: 'Services',
       items: [
-        { label: 'Academic Tutoring', href: '#services' },
-        { label: 'Test Prep & Analysis', href: '#services' },
-        { label: 'Enrichment Programs', href: '#services' },
-        { label: '1-on-1 Consultations', href: '#get-started' },
+        { label: 'Academic Tutoring', href: '/#services' },
+        { label: 'Test Prep & Analysis', href: '/#services' },
+        { label: 'Enrichment Programs', href: '/#services' },
+        { label: '1-on-1 Consultations', href: '/#get-started' },
       ],
     },
     {
       title: 'Resources',
       items: [
         { label: 'Tutoring FAQ', href: '#' },
-        { label: 'Success Outcomes', href: '#results' },
+        { label: 'Success Outcomes', href: '/#results' },
         { label: 'Diagnostic Tools', href: '#' },
         { label: 'Parent Guides', href: '#' },
       ],
@@ -57,9 +57,9 @@ export default function Footer() {
     {
       title: 'About',
       items: [
-        { label: 'Our Philosophy', href: '#about' },
-        { label: 'How We Work', href: '#how-we-work' },
-        { label: 'Expert Tutors', href: '#' },
+        { label: 'Our Philosophy', href: '/#about' },
+        { label: 'How We Work', href: '/#how-we-work' },
+        { label: 'Contact Us', href: '/contact' },
         { label: 'Careers', href: '#' },
       ],
     },
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Logo / Tagline Column */}
           <div className="md:col-span-4 flex flex-col justify-start space-y-4">
-            <a href="#" className="text-2xl font-bold tracking-tight text-white">
+            <a href="/" className="text-2xl font-bold tracking-tight text-white">
               pro<span className="text-accent-blue font-extrabold">Tutor360</span>
             </a>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
@@ -110,8 +110,11 @@ export default function Footer() {
                     <li key={itemIdx}>
                       <a
                         href={item.href}
-                        className="text-sm text-zinc-500 hover:text-white transition-colors"
+                        className="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors"
                       >
+                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
                         {item.label}
                       </a>
                     </li>
