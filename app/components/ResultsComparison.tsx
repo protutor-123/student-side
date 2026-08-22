@@ -30,10 +30,10 @@ export default function ResultsComparison() {
 
           {/* Left Column: Heading/Marketing */}
           <div className="lg:col-span-5 text-center lg:text-left">
-            <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">The Results</h2>
-            <h3 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl leading-tight">
+            <span className="text-base font-semibold uppercase tracking-wider text-accent-blue block">The Results</span>
+            <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl leading-tight">
               Designed for Measurable, Proven Growth
-            </h3>
+            </h2>
             <p className="mt-4 text-base text-zinc-600 leading-relaxed">
               We track progress continuously to ensure students are actually understanding the material and achieving their targets. Our methods produce results that far outshine standard national averages.
             </p>
@@ -41,7 +41,7 @@ export default function ResultsComparison() {
             {/* Short Callout card */}
             <div className="mt-8 rounded-2xl bg-zinc-50 border border-zinc-100 p-6 flex items-start gap-4 text-left">
               <div className="rounded-full bg-accent-blue/10 p-2 shrink-0 text-accent-blue mt-1">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -68,7 +68,7 @@ export default function ResultsComparison() {
                       <span className="text-accent-blue font-extrabold">Tutored students </span>
                       <span>{item.proTutor.label}</span>
                     </div>
-                    <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden">
+                    <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden" role="progressbar" aria-valuenow={item.proTutor.percentage} aria-valuemin={0} aria-valuemax={100} aria-label={`${item.metric} – proTutor360: ${item.proTutor.label}`}>
                       <div
                         className="h-full bg-accent-blue rounded-lg flex items-center px-3 text-white text-[10px] font-extrabold transition-all duration-1000 ease-out"
                         style={{ width: `${item.proTutor.percentage}%` }}
@@ -84,7 +84,7 @@ export default function ResultsComparison() {
                       <span>National Average</span>
                       <span>{item.average.label}</span>
                     </div>
-                    <div className="w-full h-7 bg-zinc-100/70 rounded-lg overflow-hidden">
+                    <div className="w-full h-7 bg-zinc-100/70 rounded-lg overflow-hidden" role="progressbar" aria-valuenow={item.average.percentage} aria-valuemin={0} aria-valuemax={100} aria-label={`${item.metric} – National Average: ${item.average.label}`}>
                       <div
                         className="h-full bg-zinc-400 rounded-lg flex items-center px-3 text-white text-[10px] font-bold"
                         style={{ width: `${item.average.percentage}%` }}

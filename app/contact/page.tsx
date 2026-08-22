@@ -38,11 +38,20 @@ const CONTACT_LINKS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Contact Us | proTutor360',
+  title: 'Contact Us',
   description:
     'Get in touch with proTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
   alternates: {
-    canonical: '/contact',
+    canonical: 'https://www.protutor360.com/contact',
+  },
+  openGraph: {
+    title: 'Contact Us | proTutor360',
+    description:
+      'Get in touch with proTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
+    url: 'https://www.protutor360.com/contact',
+    siteName: 'proTutor360',
+    locale: 'en_AE',
+    type: 'website',
   },
 };
 
@@ -93,9 +102,9 @@ export default function ContactPage() {
                       </svg>
                     </span>
                     <div>
-                      <h2 className="text-sm font-bold uppercase tracking-wider text-accent-blue">
+                      <h3 className="text-sm font-bold uppercase tracking-wider text-accent-blue">
                         {link.label}
-                      </h2>
+                      </h3>
                       <p className="mt-1 text-base font-semibold text-navy">{link.subtitle}</p>
                     </div>
                   </a>

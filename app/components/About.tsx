@@ -36,9 +36,9 @@ export default function About() {
 
           {/* Left Column: Philosophy Description */}
           <div className="lg:col-span-5 text-center lg:text-left">
-            <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">About proTutor360</span>
+            <span className="text-base font-semibold uppercase tracking-wider text-accent-blue block">About proTutor360</span>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-              Our Story & Philosophy
+              Our Story &amp; Philosophy
             </h2>
             <p className="mt-6 text-zinc-600 leading-relaxed text-base">
               Standard classrooms often struggle to address the unique pace and style of individual learners. We founded proTutor360 to close that gap. By combining premium materials with handpicked, compassionate mentors, we build custom pathways that unlock every student’s natural potential.

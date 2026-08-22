@@ -12,12 +12,12 @@ export default function BoardsSubjects() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">
+          <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">
             Curricula We Cover
-          </h2>
-          <p className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+          </span>
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
             Boards &amp; Subjects
-          </p>
+          </h2>
           <p className="mt-4 text-lg text-zinc-600">
             Tutoring mapped to your exact board, level, and subject list.
           </p>

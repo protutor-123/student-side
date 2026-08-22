@@ -38,10 +38,10 @@ export default function HowWeWork() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">Our Process</h2>
-          <p className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+          <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">Our Process</span>
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
             A Step-by-Step Pathway to Mastery
-          </p>
+          </h2>
           <p className="mt-4 text-lg text-zinc-600">
             From first consult to top-tier scores, we ensure your child feels supported and guided.
           </p>

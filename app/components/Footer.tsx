@@ -25,13 +25,6 @@ const SOCIALS = [
       </>
     ),
   },
-  {
-    label: 'LinkedIn',
-    href: '#',
-    icon: (
-      <circle cx="12" cy="12" r="10" />
-    ),
-  },
 ];
 
 export default function Footer() {
@@ -48,10 +41,7 @@ export default function Footer() {
     {
       title: 'Resources',
       items: [
-        { label: 'Tutoring FAQ', href: '#' },
         { label: 'Success Outcomes', href: '/#results' },
-        { label: 'Diagnostic Tools', href: '#' },
-        { label: 'Parent Guides', href: '#' },
       ],
     },
     {
@@ -60,7 +50,6 @@ export default function Footer() {
         { label: 'Our Philosophy', href: '/#about' },
         { label: 'How We Work', href: '/#how-we-work' },
         { label: 'Contact Us', href: '/contact' },
-        { label: 'Careers', href: '#' },
       ],
     },
   ];
@@ -112,7 +101,7 @@ export default function Footer() {
                         href={item.href}
                         className="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors"
                       >
-                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                         {item.label}
@@ -132,9 +121,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} proTutor360 Education Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 text-xs text-zinc-600">
-            <a href="#" className="hover:text-zinc-400">Privacy Policy</a>
-            <a href="#" className="hover:text-zinc-400">Terms of Service</a>
-            <a href="#" className="hover:text-zinc-400">Cookie Settings</a>
+            <span className="text-zinc-600">Privacy Policy</span>
+            <span className="text-zinc-600">Terms of Service</span>
           </div>
         </div>
 

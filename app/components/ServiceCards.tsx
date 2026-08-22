@@ -37,10 +37,10 @@ export default function ServiceCards() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-base font-semibold uppercase tracking-wider text-accent-blue">Our Programs</h2>
-          <p className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+          <span className="text-base font-semibold uppercase tracking-wider text-accent-blue">Our Programs</span>
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
             Tailored Tutoring for Every Academic Milestone
-          </p>
+          </h2>
           <p className="mt-4 text-lg text-zinc-600">
             We focus on understanding each student's unique learning profile to design the perfect pathway to success.
           </p>
@@ -66,7 +66,7 @@ export default function ServiceCards() {
                 <ul className="space-y-3">
                   {service.bullets.map((bullet, bulletIdx) => (
                     <li key={bulletIdx} className="flex items-start gap-2.5">
-                      <svg className="h-5 w-5 text-accent-blue/80 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                      <svg className="h-5 w-5 text-accent-blue/80 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                       <span className="text-sm text-zinc-700 font-medium">{bullet}</span>
@@ -81,8 +81,8 @@ export default function ServiceCards() {
                   href="#get-started"
                   className="inline-flex items-center gap-1.5 text-sm font-bold text-accent-blue hover:text-accent-blue-hover"
                 >
-                  Learn more
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                  Learn more<span className="sr-only"> about {service.title}</span>
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
                 </a>
