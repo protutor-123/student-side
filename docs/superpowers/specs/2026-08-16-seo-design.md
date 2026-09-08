@@ -1,8 +1,8 @@
-# SEO Design — proTutor360 Landing Page
+# SEO Design — ProTutor360 Landing Page
 
 ## Context
 
-`proTutor360` is a single-page Next.js app (`app/page.tsx`) — one route (`/`), with in-page anchor sections (`#boards`, `#get-started`, `#how-we-work`, `#about`, `#results`). There is currently no metadata beyond a basic `title`/`description` in `app/layout.tsx`, and no `robots.txt`, `sitemap.xml`, or structured data.
+`ProTutor360` is a single-page Next.js app (`app/page.tsx`) — one route (`/`), with in-page anchor sections (`#boards`, `#get-started`, `#how-we-work`, `#about`, `#results`). There is currently no metadata beyond a basic `title`/`description` in `app/layout.tsx`, and no `robots.txt`, `sitemap.xml`, or structured data.
 
 - Production domain: `https://ProTutor360.com`
 - Target market: UAE (Dubai/Abu Dhabi/Sharjah — online tutoring, no physical branch)
@@ -32,10 +32,10 @@
 Replace the current minimal `Metadata` export with an expanded object:
 
 - `metadataBase: new URL('https://ProTutor360.com')`
-- `title`: `"proTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More"`
+- `title`: `"ProTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More"`
 - `description`: keyword-rich, UAE-targeted, mentions personalized 1-on-1 tutoring and the boards covered
 - `keywords`: array covering board + geography combinations (e.g. `online tutoring UAE`, `IB tutors Dubai`, `IGCSE tutoring Abu Dhabi`, `CBSE tutors UAE`, `ICSE online tuition`, `home tutors Dubai`)
-- `openGraph`: `title`, `description`, `url: '/'`, `siteName: 'proTutor360'`, `locale: 'en_AE'`, `type: 'website'`, `images: ['/hero-illustration.jpg']` (existing asset, reused as placeholder — not cropped to 1200×630, noted as a follow-up)
+- `openGraph`: `title`, `description`, `url: '/'`, `siteName: 'ProTutor360'`, `locale: 'en_AE'`, `type: 'website'`, `images: ['/hero-illustration.jpg']` (existing asset, reused as placeholder — not cropped to 1200×630, noted as a follow-up)
 - `twitter`: `card: 'summary_large_image'`, same title/description/image; no `site`/`creator` handle (none exist yet)
 - `robots`: `{ index: true, follow: true }`
 - `alternates.canonical: '/'`
@@ -78,7 +78,7 @@ One `<script type="application/ld+json">` rendered in `<body>` (or `<head>` via 
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  "name": "proTutor360",
+  "name": "ProTutor360",
   "url": "https://ProTutor360.com",
   "description": "Personalized 1-on-1 online tutoring for students in the UAE across IB, IGCSE, CBSE, ICSE and more.",
   "areaServed": {

@@ -118,7 +118,7 @@ export default function Footer() {
         {/* Bottom copyright / legal row */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 gap-4">
           <p className="text-xs text-zinc-600">
-            &copy; {new Date().getFullYear()} proTutor360 Education Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} ProTutor360 Education Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 text-xs text-zinc-600">
             <span className="text-zinc-600">Privacy Policy</span>

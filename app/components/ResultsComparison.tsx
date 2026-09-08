@@ -68,7 +68,7 @@ export default function ResultsComparison() {
                       <span className="text-accent-blue font-extrabold">Tutored students </span>
                       <span>{item.proTutor.label}</span>
                     </div>
-                    <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden" role="progressbar" aria-valuenow={item.proTutor.percentage} aria-valuemin={0} aria-valuemax={100} aria-label={`${item.metric} – proTutor360: ${item.proTutor.label}`}>
+                    <div className="w-full h-7 bg-zinc-100 rounded-lg overflow-hidden" role="progressbar" aria-valuenow={item.proTutor.percentage} aria-valuemin={0} aria-valuemax={100} aria-label={`${item.metric} – ProTutor360: ${item.proTutor.label}`}>
                       <div
                         className="h-full bg-accent-blue rounded-lg flex items-center px-3 text-white text-[10px] font-extrabold transition-all duration-1000 ease-out"
                         style={{ width: `${item.proTutor.percentage}%` }}

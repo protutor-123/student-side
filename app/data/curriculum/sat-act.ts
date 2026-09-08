@@ -10,11 +10,11 @@ const satAct: CurriculumConfig = {
     headline: 'Expert SAT Prep Dubai — Score 1500+ With Personalised 1-on-1 Coaching',
     subheadline: 'Specialist SAT and ACT tutors helping Dubai students reach US university score targets.',
     description:
-      'proTutor360 offers expert SAT prep in Dubai and across the UAE, pairing students with specialist tutors who know the College Board exam structure, scoring algorithm, and proven high-score strategies. Whether your target is 1400 for a strong US university application or 1550+ for an Ivy-League reach school, our personalised 1-on-1 SAT coaching builds the skills and test-taking strategy to get you there. We also provide ACT preparation with equal depth. All sessions are live, online, and built around a diagnostic baseline score. Book a free consultation and start your journey to your target score today.',
+      'ProTutor360 offers expert SAT prep in Dubai and across the UAE, pairing students with specialist tutors who know the College Board exam structure, scoring algorithm, and proven high-score strategies. Whether your target is 1400 for a strong US university application or 1550+ for an Ivy-League reach school, our personalised 1-on-1 SAT coaching builds the skills and test-taking strategy to get you there. We also provide ACT preparation with equal depth. All sessions are live, online, and built around a diagnostic baseline score. Book a free consultation and start your journey to your target score today.',
   },
 
   why: {
-    heading: 'Why proTutor360 Delivers the Best SAT Prep in Dubai',
+    heading: 'Why ProTutor360 Delivers the Best SAT Prep in Dubai',
     intro:
       'High SAT scores are not about memorising facts — they are about mastering a specific test format, recognising question patterns, and managing 3 hours of sustained focus. Our tutors are built for exactly this.',
     points: [
@@ -61,14 +61,14 @@ const satAct: CurriculumConfig = {
 
   faqs: [
     {
-      question: 'What SAT score improvements do proTutor360 students typically see?',
+      question: 'What SAT score improvements do ProTutor360 students typically see?',
       answer:
-        'Students who complete a structured 3-month prep programme with proTutor360 typically improve by 100–200 points from their diagnostic baseline. Students starting in the 1100–1200 range and targeting 1400+ regularly achieve their goal with consistent effort across 12–16 sessions. For students already scoring 1350+ and targeting 1500+, the improvements are smaller in scale but high-value, as each point in the upper range is harder to earn.',
+        'Students who complete a structured 3-month prep programme with ProTutor360 typically improve by 100–200 points from their diagnostic baseline. Students starting in the 1100–1200 range and targeting 1400+ regularly achieve their goal with consistent effort across 12–16 sessions. For students already scoring 1350+ and targeting 1500+, the improvements are smaller in scale but high-value, as each point in the upper range is harder to earn.',
     },
     {
       question: 'Do you prepare students for the new digital SAT format?',
       answer:
-        'Yes. All proTutor360 SAT coaching is built around the digital SAT format (introduced globally in March 2024) delivered through College Board\'s Bluebook platform. Our tutors are trained on the adaptive module structure — where Module 2 difficulty is determined by performance in Module 1 — and teach specific strategies for students who want to unlock the harder Module 2 to access the highest-scoring questions.',
+        'Yes. All ProTutor360 SAT coaching is built around the digital SAT format (introduced globally in March 2024) delivered through College Board\'s Bluebook platform. Our tutors are trained on the adaptive module structure — where Module 2 difficulty is determined by performance in Module 1 — and teach specific strategies for students who want to unlock the harder Module 2 to access the highest-scoring questions.',
     },
     {
       question: 'Should my child take the SAT or the ACT?',

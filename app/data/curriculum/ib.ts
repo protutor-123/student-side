@@ -10,11 +10,11 @@ const ib: CurriculumConfig = {
     headline: 'Expert IB Tutor Dubai — Achieve 40+ With Personalised 1-on-1 Support',
     subheadline: 'Specialist IB tutors for all DP subjects across Dubai, Abu Dhabi & Sharjah.',
     description:
-      'proTutor360 connects IB Diploma Programme students in Dubai, Abu Dhabi, and Sharjah with verified IB tutors who have first-hand teaching and examining experience. Whether you are aiming for a 7 in HL Mathematics, struggling with Theory of Knowledge, or pushing your Extended Essay to the highest mark band, our specialist IB tutors build a personalised study plan around your exact subjects and exam calendar. Every session is live, 1-on-1, and delivered online so your IB tutor Dubai can meet you wherever you are. Start with a free diagnostic consultation and take the first step toward 40 points and beyond.',
+      'ProTutor360 connects IB Diploma Programme students in Dubai, Abu Dhabi, and Sharjah with verified IB tutors who have first-hand teaching and examining experience. Whether you are aiming for a 7 in HL Mathematics, struggling with Theory of Knowledge, or pushing your Extended Essay to the highest mark band, our specialist IB tutors build a personalised study plan around your exact subjects and exam calendar. Every session is live, 1-on-1, and delivered online so your IB tutor Dubai can meet you wherever you are. Start with a free diagnostic consultation and take the first step toward 40 points and beyond.',
   },
 
   why: {
-    heading: 'Why Dubai IB Students Choose proTutor360',
+    heading: 'Why Dubai IB Students Choose ProTutor360',
     intro:
       'The IB Diploma Programme demands more than subject knowledge — it rewards students who can think critically, manage internal assessments, and perform under exam pressure. Our tutors are built for exactly that.',
     points: [
@@ -24,7 +24,7 @@ const ib: CurriculumConfig = {
       },
       {
         title: 'Internal Assessment & Extended Essay Mentoring',
-        body: 'IA moderation and EE supervision are where IB students most need expert guidance yet receive the least. proTutor360 tutors provide structured, subject-specific support for every stage of both assignments.',
+        body: 'IA moderation and EE supervision are where IB students most need expert guidance yet receive the least. ProTutor360 tutors provide structured, subject-specific support for every stage of both assignments.',
       },
       {
         title: 'Full-Score Strategy for Theory of Knowledge',
@@ -76,7 +76,7 @@ const ib: CurriculumConfig = {
     {
       question: 'Do you support IB Internal Assessments (IAs)?',
       answer:
-        'Yes — Internal Assessment support is one of the areas where proTutor360 adds the most value. Our tutors guide students through topic selection, research design, data analysis, and the specific formatting requirements for each subject\'s IA. Because our tutors include former IB examiners, they know precisely what moderators look for and how to maximise marks in each mark band.',
+        'Yes — Internal Assessment support is one of the areas where ProTutor360 adds the most value. Our tutors guide students through topic selection, research design, data analysis, and the specific formatting requirements for each subject\'s IA. Because our tutors include former IB examiners, they know precisely what moderators look for and how to maximise marks in each mark band.',
     },
     {
       question: 'Can you help with the Extended Essay?',
@@ -96,12 +96,12 @@ const ib: CurriculumConfig = {
     {
       question: 'Do you offer IB tutoring online for students outside Dubai?',
       answer:
-        'Yes. All proTutor360 sessions are delivered online via live video call with an interactive whiteboard, so students in Abu Dhabi, Sharjah, Ajman, and across the UAE — and internationally — can access the same IB tutors as students in Dubai. Online delivery also makes it easier to match students with the most qualified specialist for their specific subject, regardless of geography.',
+        'Yes. All ProTutor360 sessions are delivered online via live video call with an interactive whiteboard, so students in Abu Dhabi, Sharjah, Ajman, and across the UAE — and internationally — can access the same IB tutors as students in Dubai. Online delivery also makes it easier to match students with the most qualified specialist for their specific subject, regardless of geography.',
     },
     {
       question: 'How do I verify my child\'s IB tutor is qualified?',
       answer:
-        'Every tutor in the proTutor360 network is vetted through credential verification, a subject-knowledge assessment, and a structured interview. For IB, we specifically confirm prior IBDP teaching or examining experience and subject-specific DP training. You can request a tutor bio and qualification summary before your first session — transparency is a core part of how we operate.',
+        'Every tutor in the ProTutor360 network is vetted through credential verification, a subject-knowledge assessment, and a structured interview. For IB, we specifically confirm prior IBDP teaching or examining experience and subject-specific DP training. You can request a tutor bio and qualification summary before your first session — transparency is a core part of how we operate.',
     },
   ],
 

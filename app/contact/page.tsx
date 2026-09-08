@@ -40,16 +40,16 @@ const CONTACT_LINKS = [
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with proTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
+    'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
   alternates: {
     canonical: 'https://www.ProTutor360.com/contact',
   },
   openGraph: {
-    title: 'Contact Us | proTutor360',
+    title: 'Contact Us | ProTutor360',
     description:
-      'Get in touch with proTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
+      'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
     url: 'https://www.ProTutor360.com/contact',
-    siteName: 'proTutor360',
+    siteName: 'ProTutor360',
     locale: 'en_AE',
     type: 'website',
   },

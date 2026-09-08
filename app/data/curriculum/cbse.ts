@@ -10,11 +10,11 @@ const cbse: CurriculumConfig = {
     headline: 'Trusted CBSE Tutor UAE — Excel in Board Exams With 1-on-1 Expert Tutoring',
     subheadline: 'Specialist CBSE tutors for Classes 8–12 across Dubai, Abu Dhabi, Sharjah & all UAE emirates.',
     description:
-      'proTutor360 provides CBSE students across the UAE with expert tutors who know the NCERT syllabus deeply and understand exactly how CBSE board exams are marked. Whether your child is in Class 8 building core concepts or in Class 12 preparing for the All India Board Exam, our specialist CBSE tutors create a personalised study plan that covers every chapter, every mark, and every potential exam question. Sessions are live, 1-on-1, and fully online — making it easy to access the best CBSE tutor UAE has available, whatever your location or school schedule. Start with a free consultation today.',
+      'ProTutor360 provides CBSE students across the UAE with expert tutors who know the NCERT syllabus deeply and understand exactly how CBSE board exams are marked. Whether your child is in Class 8 building core concepts or in Class 12 preparing for the All India Board Exam, our specialist CBSE tutors create a personalised study plan that covers every chapter, every mark, and every potential exam question. Sessions are live, 1-on-1, and fully online — making it easy to access the best CBSE tutor UAE has available, whatever your location or school schedule. Start with a free consultation today.',
   },
 
   why: {
-    heading: 'Why UAE CBSE Students Trust proTutor360',
+    heading: 'Why UAE CBSE Students Trust ProTutor360',
     intro:
       'Thousands of Indian-curriculum students study across UAE schools each year. Succeeding in CBSE board exams from abroad requires tutors who bridge both the NCERT syllabus and the practical challenges of studying outside India.',
     points: [
@@ -67,7 +67,7 @@ const cbse: CurriculumConfig = {
     {
       question: 'Which CBSE classes do you tutor in the UAE?',
       answer:
-        'proTutor360 tutors CBSE students from Class 8 through Class 12 across all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Fujairah, Ras Al Khaimah, and Umm Al Quwain. We offer both subject-specific support and full-programme tutoring, adapting to each student\'s exact school and CBSE regional curriculum requirements.',
+        'ProTutor360 tutors CBSE students from Class 8 through Class 12 across all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Fujairah, Ras Al Khaimah, and Umm Al Quwain. We offer both subject-specific support and full-programme tutoring, adapting to each student\'s exact school and CBSE regional curriculum requirements.',
     },
     {
       question: 'Do you cover both PCM (Science) and Commerce streams?',
@@ -80,7 +80,7 @@ const cbse: CurriculumConfig = {
         'Indian-curriculum schools in the UAE typically follow a term structure and exam calendar that differs from CBSE schools in India. Our tutors are familiar with these differences and build revision and mock-exam schedules around your child\'s actual UAE school timetable — including the mid-term and annual exam periods typical of UAE CBSE schools.',
     },
     {
-      question: 'Can proTutor360 help with CBSE board exam preparation?',
+      question: 'Can ProTutor360 help with CBSE board exam preparation?',
       answer:
         'Yes — CBSE board exam preparation is one of our specialisms. Our tutors work through the official CBSE sample papers and previous years\' question papers with students, teaching them to answer in the precise format that CBSE examiners reward. We also run timed mock tests and provide detailed mark-scheme feedback, so students are exam-ready well before the actual sitting.',
     },

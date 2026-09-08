@@ -13,12 +13,12 @@ import ParentPopup from './components/ParentPopup';
 
 const FAQ_DATA = [
   {
-    question: 'What curricula does proTutor360 support?',
+    question: 'What curricula does ProTutor360 support?',
     answer:
       'We offer expert tutoring for IB (IBDP), IGCSE, CBSE, ICSE, AP, and more. Our tutors are board-certified and specialize in the exact syllabus your child follows.',
   },
   {
-    question: 'How does online tutoring work at proTutor360?',
+    question: 'How does online tutoring work at ProTutor360?',
     answer:
       'After a free consultation and diagnostic assessment, we match your child with a specialist tutor. Sessions are 1-on-1, live, and interactive via video call. You receive progress reports after every session.',
   },

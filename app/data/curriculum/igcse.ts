@@ -10,11 +10,11 @@ const igcse: CurriculumConfig = {
     headline: 'Top-Rated IGCSE Tutor Dubai — A* Results With Expert 1-on-1 Tutoring',
     subheadline: 'Specialist Cambridge IGCSE tutors for all core and extended subjects across Dubai, Abu Dhabi & Sharjah.',
     description:
-      'proTutor360 provides Cambridge IGCSE students in Dubai, Abu Dhabi, and Sharjah with specialist tutors who know the Cambridge syllabus in precise detail. From IGCSE Mathematics and Sciences to English and Humanities, our expert tutors build a customised learning plan around your child\'s current grade, target, and exam sitting. Every session is live, 1-on-1, and delivered online — making it easy to access the best IGCSE tutor Dubai has available, regardless of your location or school schedule. Begin with a free diagnostic to identify gaps and set a clear pathway to A* performance.',
+      'ProTutor360 provides Cambridge IGCSE students in Dubai, Abu Dhabi, and Sharjah with specialist tutors who know the Cambridge syllabus in precise detail. From IGCSE Mathematics and Sciences to English and Humanities, our expert tutors build a customised learning plan around your child\'s current grade, target, and exam sitting. Every session is live, 1-on-1, and delivered online — making it easy to access the best IGCSE tutor Dubai has available, regardless of your location or school schedule. Begin with a free diagnostic to identify gaps and set a clear pathway to A* performance.',
   },
 
   why: {
-    heading: 'Why proTutor360 Is Dubai\'s Choice for IGCSE Tutoring',
+    heading: 'Why ProTutor360 Is Dubai\'s Choice for IGCSE Tutoring',
     intro:
       'Cambridge IGCSE assessments are rigorous and syllabus-specific. Students who struggle often do so not for lack of intelligence but because generic tutoring ignores the precise mark-scheme language Cambridge examiners reward.',
     points: [
@@ -65,7 +65,7 @@ const igcse: CurriculumConfig = {
 
   faqs: [
     {
-      question: 'What IGCSE grades do proTutor360 students typically achieve?',
+      question: 'What IGCSE grades do ProTutor360 students typically achieve?',
       answer:
         'The majority of our IGCSE students in Dubai move at least two grade bands from their initial diagnostic level. Students starting at a C typically reach an A within two to three terms of structured tutoring. Students who begin at B and target A* frequently achieve this with four to six months of focused past-paper coaching. Individual results depend on starting point, frequency of sessions, and student effort.',
     },
@@ -82,7 +82,7 @@ const igcse: CurriculumConfig = {
     {
       question: 'Do you offer IGCSE tutoring for all Cambridge syllabuses?',
       answer:
-        'Yes. proTutor360 tutors are matched to students based on the exact Cambridge IGCSE syllabus code they are studying. We cover the main Cambridge IGCSE and Cambridge O Level syllabuses across all five subject groups. If you are unsure which syllabus your child follows, share your school\'s subject code and we will match the right specialist.',
+        'Yes. ProTutor360 tutors are matched to students based on the exact Cambridge IGCSE syllabus code they are studying. We cover the main Cambridge IGCSE and Cambridge O Level syllabuses across all five subject groups. If you are unsure which syllabus your child follows, share your school\'s subject code and we will match the right specialist.',
     },
     {
       question: 'Can you help with IGCSE coursework and controlled assessments?',
@@ -92,7 +92,7 @@ const igcse: CurriculumConfig = {
     {
       question: 'Do you offer IGCSE tutoring outside Dubai?',
       answer:
-        'All proTutor360 sessions are delivered online via live video call, so students across Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, and the wider UAE can access our IGCSE tutors. We also serve international students in Kuwait, Qatar, Bahrain, and Oman who follow the Cambridge IGCSE curriculum.',
+        'All ProTutor360 sessions are delivered online via live video call, so students across Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, and the wider UAE can access our IGCSE tutors. We also serve international students in Kuwait, Qatar, Bahrain, and Oman who follow the Cambridge IGCSE curriculum.',
     },
   ],
 
