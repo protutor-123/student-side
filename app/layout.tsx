@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = 'https://www.protutor360.com';
+const SITE_URL = 'https://www.ProTutor360.com';
 const SITE_TITLE = 'proTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More';
 const SITE_DESCRIPTION =
   "Personalized 1-on-1 online tutoring for students in the UAE across IB, IGCSE, CBSE, ICSE and more. Expert mentors, custom learning pathways, and proven results.";
@@ -129,7 +129,7 @@ export default function RootLayout({
               },
               sameAs: [
                 'https://www.facebook.com/share/18APFT2B9b/',
-                'https://www.instagram.com/protutorthreesixtydegree',
+                'https://www.instagram.com/ProTutorthreesixtydegree',
               ],
             }),
           }}

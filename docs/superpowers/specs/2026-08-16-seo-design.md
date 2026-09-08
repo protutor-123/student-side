@@ -4,7 +4,7 @@
 
 `proTutor360` is a single-page Next.js app (`app/page.tsx`) — one route (`/`), with in-page anchor sections (`#boards`, `#get-started`, `#how-we-work`, `#about`, `#results`). There is currently no metadata beyond a basic `title`/`description` in `app/layout.tsx`, and no `robots.txt`, `sitemap.xml`, or structured data.
 
-- Production domain: `https://protutor360.com`
+- Production domain: `https://ProTutor360.com`
 - Target market: UAE (Dubai/Abu Dhabi/Sharjah — online tutoring, no physical branch)
 - Boards covered (from `app/data/boards.ts`): IB, IGCSE, CBSE, ICSE, VIC, IFC
 - No social profiles yet — social meta/`sameAs` omitted, to be added later
@@ -31,7 +31,7 @@
 
 Replace the current minimal `Metadata` export with an expanded object:
 
-- `metadataBase: new URL('https://protutor360.com')`
+- `metadataBase: new URL('https://ProTutor360.com')`
 - `title`: `"proTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More"`
 - `description`: keyword-rich, UAE-targeted, mentions personalized 1-on-1 tutoring and the boards covered
 - `keywords`: array covering board + geography combinations (e.g. `online tutoring UAE`, `IB tutors Dubai`, `IGCSE tutoring Abu Dhabi`, `CBSE tutors UAE`, `ICSE online tuition`, `home tutors Dubai`)
@@ -48,7 +48,7 @@ Generate (not static `.txt`) so it can reference `metadataBase` indirectly via a
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: '*', allow: '/' },
-    sitemap: 'https://protutor360.com/sitemap.xml',
+    sitemap: 'https://ProTutor360.com/sitemap.xml',
   };
 }
 ```
@@ -61,7 +61,7 @@ Single entry — the in-page anchors are not separate crawlable documents and mu
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://protutor360.com',
+      url: 'https://ProTutor360.com',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
@@ -79,7 +79,7 @@ One `<script type="application/ld+json">` rendered in `<body>` (or `<head>` via 
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "proTutor360",
-  "url": "https://protutor360.com",
+  "url": "https://ProTutor360.com",
   "description": "Personalized 1-on-1 online tutoring for students in the UAE across IB, IGCSE, CBSE, ICSE and more.",
   "areaServed": {
     "@type": "Country",
