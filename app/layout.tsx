@@ -44,10 +44,8 @@ export const metadata: Metadata = {
   },
   category: 'education',
   other: {
-    'geo.region': 'AE-DU',
-    'geo.placename': 'Dubai',
-    'geo.position': '25.1872;55.2652',
-    ICBM: '25.1872, 55.2652',
+    'geo.region': 'AE-RK',
+    'geo.placename': 'Ras Al Khaimah',
   },
   openGraph: {
     title: SITE_TITLE,
@@ -114,11 +112,6 @@ export default function RootLayout({
                 addressLocality: 'Ras Al Khaimah',
                 addressRegion: 'Ras Al Khaimah',
                 addressCountry: 'AE',
-              },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: 25.1872,
-                longitude: 55.2652,
               },
               areaServed: [
                 { '@type': 'City', name: 'Dubai' },
