@@ -101,9 +101,9 @@ export default function RootLayout({
               telephone: '+971552043002',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Executive Tower, Business Bay',
-                addressLocality: 'Dubai',
-                addressRegion: 'Dubai',
+                streetAddress: 'VUNE2821, Compass building - Al Hulaila, Al Hulaila Industrial Zone-FZ',
+                addressLocality: 'Ras Al Khaimah',
+                addressRegion: 'Ras Al Khaimah',
                 addressCountry: 'AE',
               },
               geo: {

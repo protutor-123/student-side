@@ -40,14 +40,14 @@ const CONTACT_LINKS = [
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
+    'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
   alternates: {
     canonical: 'https://www.ProTutor360.com/contact',
   },
   openGraph: {
     title: 'Contact Us | ProTutor360',
     description:
-      'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Business Bay, Dubai office.',
+      'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
     url: 'https://www.ProTutor360.com/contact',
     siteName: 'ProTutor360',
     locale: 'en_AE',
@@ -80,11 +80,13 @@ export default function ContactPage() {
                     Our Office
                   </h2>
                   <p className="text-base text-zinc-700 leading-relaxed">
-                    Executive Tower
+                    VUNE2821
                     <br />
-                    Business Bay
+                    Compass building - Al Hulaila,
                     <br />
-                    Dubai, United Arab Emirates
+                    Al Hulaila Industrial Zone-FZ,
+                    <br />
+                    Ras Al Khaimah, United Arab Emirates
                   </p>
                 </div>
 
