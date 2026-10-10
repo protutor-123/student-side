@@ -29,9 +29,6 @@ export const metadata: Metadata = {
     'online tutoring UAE',
     'IB tutors Dubai',
     'IGCSE tutoring Abu Dhabi',
-    'CBSE tutors UAE',
-    'ICSE online tuition',
-    'home tutors Dubai',
     'online tuition Sharjah',
     'test prep UAE',
     'private tutor UAE',
@@ -41,6 +38,16 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: SITE_URL,
+    languages: {
+      'en-AE': SITE_URL,
+    },
+  },
+  category: 'education',
+  other: {
+    'geo.region': 'AE-DU',
+    'geo.placename': 'Dubai',
+    'geo.position': '25.1872;55.2652',
+    ICBM: '25.1872, 55.2652',
   },
   openGraph: {
     title: SITE_TITLE,
@@ -84,7 +91,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-AE"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
@@ -98,6 +105,8 @@ export default function RootLayout({
               url: SITE_URL,
               logo: `${SITE_URL}/logo.png`,
               description: SITE_DESCRIPTION,
+              inLanguage: 'en-AE',
+              currenciesAccepted: 'AED',
               telephone: '+971552043002',
               address: {
                 '@type': 'PostalAddress',
@@ -115,6 +124,7 @@ export default function RootLayout({
                 { '@type': 'City', name: 'Dubai' },
                 { '@type': 'City', name: 'Abu Dhabi' },
                 { '@type': 'City', name: 'Sharjah' },
+                { '@type': 'City', name: 'Ajman' },
                 { '@type': 'Country', name: 'United Arab Emirates' },
               ],
               hasOfferCatalog: {
