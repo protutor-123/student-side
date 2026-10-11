@@ -31,6 +31,10 @@ const ib: CurriculumConfig = {
         body: 'TOK trips up high-achieving students who underestimate it. Our TOK specialists coach students through exhibition planning, essay construction, and the conceptual thinking that earns top scores.',
       },
       {
+        title: 'IB Past Papers & Practice Papers',
+        body: 'Students work through topic-wise IB past papers, full practice papers, and timed mock exams for every HL and SL subject. Each paper is marked against the official IB mark scheme, with feedback on command terms, mark allocation, and recurring errors so scores rise before May and November sessions.',
+      },
+      {
         title: 'Session-by-Session Progress Reports',
         body: 'After every session parents and students receive a structured report mapping work covered to IB assessment objectives — so you always know exactly where your child stands.',
       },
@@ -77,6 +81,16 @@ const ib: CurriculumConfig = {
       question: 'Do you support IB Internal Assessments (IAs)?',
       answer:
         'Yes — Internal Assessment support is one of the areas where ProTutor360 adds the most value. Our tutors guide students through topic selection, research design, data analysis, and the specific formatting requirements for each subject\'s IA. Because our tutors include former IB examiners, they know precisely what moderators look for and how to maximise marks in each mark band.',
+    },
+    {
+      question: 'Do you help with IB past papers and practice papers?',
+      answer:
+        'Yes. Past paper practice is a core part of our IB tutoring. Tutors assign topic-wise IB past papers early in the course, then move to full Paper 1, Paper 2 and Paper 3 practice papers and timed mock exams closer to the May and November sessions. Every paper is marked against the IB mark scheme and reviewed with the student, covering command terms, mark allocation, and common mistakes, for all HL and SL subjects.',
+    },
+    {
+      question: 'How do you use mock exams and practice papers to prepare for final IB exams?',
+      answer:
+        'We start with a diagnostic paper to find weak topics, then build a revision plan around targeted question practice. In the final months students sit timed practice papers under exam conditions. Their tutor then goes through each answer using examiner-style feedback, so students learn how marks are awarded and how to manage time across every paper.',
     },
     {
       question: 'Can you help with the Extended Essay?',

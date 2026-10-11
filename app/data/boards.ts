@@ -15,7 +15,7 @@ export const BOARDS: Board[] = [
     id: 'ib',
     name: 'IB',
     groups: [
-      { label: 'Programmes', items: ['IBDP', 'IGCSE', 'AS/A Level'] },
+      { label: 'Programmes', items: ['PYP', 'MYP', 'DP', 'IGCSE', 'AS/A Level'] },
       {
         label: 'DP Core Requirements',
         items: ['CAS Project', 'Extended Essay (EE)', 'Theory of Knowledge (TOK)'],
