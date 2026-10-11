@@ -4,7 +4,8 @@ const POINTS = [
   'Support across all HL & SL subjects, including TOK, EE & IA',
   'Flexible scheduling that fits your IB calendar',
   'Assessment-aligned strategies with past papers & mark schemes',
-  'Targeted help for CAIE, IBO, and international IB standards',
+  'IB past papers, practice papers & timed mock exams with examiner-style feedback',
+  'Targeted help for IB, Cambridge, Edexcel, AQA',
 ];
 
 export default function WhyChooseUs() {

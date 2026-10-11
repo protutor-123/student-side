@@ -18,6 +18,11 @@ const FAQ_DATA = [
       'We offer expert tutoring for IB (IBDP), IGCSE, CBSE, ICSE, AP, and more. Our tutors are board-certified and specialize in the exact syllabus your child follows.',
   },
   {
+    question: 'Do you help with IB past papers and practice papers?',
+    answer:
+      'Yes. Our IB tutors work through topic-wise past papers, full practice papers, and timed mock exams with students, then go through the mark scheme line by line. You get examiner-style feedback on command terms, mark allocation, and common errors for every HL and SL subject.',
+  },
+  {
     question: 'How does online tutoring work at ProTutor360?',
     answer:
       'After a free consultation and diagnostic assessment, we match your child with a specialist tutor. Sessions are 1-on-1, live, and interactive via video call. You receive progress reports after every session.',

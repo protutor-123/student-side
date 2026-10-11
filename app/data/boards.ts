@@ -15,7 +15,7 @@ export const BOARDS: Board[] = [
     id: 'ib',
     name: 'IB',
     groups: [
-      { label: 'Programmes', items: ['PYP', 'MYP', 'DP'] },
+      { label: 'Programmes', items: ['IBDP', 'IGCSE', 'AS/A Level'] },
       {
         label: 'DP Core Requirements',
         items: ['CAS Project', 'Extended Essay (EE)', 'Theory of Knowledge (TOK)'],
@@ -37,10 +37,52 @@ export const BOARDS: Board[] = [
     ],
   },
   {
-    id: 'igcse',
-    name: 'IGCSE',
+    id: 'cambridge',
+    name: 'Cambridge',
     groups: [
-      { label: 'Exam Boards', items: ['Cambridge', 'Edexcel', 'AQA'] },
+      { label: 'Levels', items: ['IGCSE', 'O Level', 'AS & A Level'] },
+      {
+        label: 'Subjects',
+        items: [
+          'Maths',
+          'Further Maths',
+          'Physics',
+          'Chemistry',
+          'Biology',
+          'English Language',
+          'Economics',
+          'Business Studies',
+          'Computer Science',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'edexcel',
+    name: 'Edexcel',
+    groups: [
+      { label: 'Levels', items: ['International GCSE', 'International AS & A Level'] },
+      {
+        label: 'Subjects',
+        items: [
+          'Maths',
+          'Further Pure Maths',
+          'Physics',
+          'Chemistry',
+          'Biology',
+          'English Language',
+          'Economics',
+          'Business',
+          'Accounting',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'aqa',
+    name: 'AQA',
+    groups: [
+      { label: 'Levels', items: ['GCSE', 'International GCSE', 'A Level'] },
       {
         label: 'Subjects',
         items: [
@@ -48,11 +90,10 @@ export const BOARDS: Board[] = [
           'Physics',
           'Chemistry',
           'Biology',
-          'English',
-          'Economics',
-          'Business Studies',
-          'Spanish',
-          'French',
+          'English Language',
+          'English Literature',
+          'Computer Science',
+          'Psychology',
         ],
       },
     ],
@@ -104,7 +145,7 @@ export const BOARDS: Board[] = [
   },
   {
     id: 'icse',
-    name: 'ICSE',
+    name: 'ICSE / ISC',
     groups: [
       {
         label: 'Grades 5–10 (ICSE)',
@@ -153,27 +194,6 @@ export const BOARDS: Board[] = [
           'Economics',
           'Business Studies',
           'Accounting',
-        ],
-      },
-    ],
-  },
-  {
-    id: 'isc',
-    name: 'ISC',
-    groups: [
-      { label: 'Levels', items: ['Foundation', 'Advanced'] },
-      {
-        label: 'Subjects',
-        items: [
-          'English',
-          'Maths',
-          'Physics',
-          'Chemistry',
-          'Biology',
-          'Economics',
-          'Business Studies',
-          'Accounting',
-          'Computer Science',
         ],
       },
     ],
