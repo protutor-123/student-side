@@ -2,23 +2,23 @@ export default function ResultsComparison() {
   const comparisons = [
     {
       metric: 'Average Grade Improvement (GPA Boost)',
-      proTutor: { label: '+0.8 GPA Increase', percentage: 95 },
-      average: { label: '+0.2 GPA Increase', percentage: 40 },
+      proTutor: { label: '+0.5 GPA Increase', percentage: 75 },
+      average: { label: '+0.2 GPA Increase', percentage: 30 },
     },
     {
       metric: 'Average SAT Score Gains',
-      proTutor: { label: '+180 Points', percentage: 90 },
-      average: { label: '+50 Points', percentage: 35 },
+      proTutor: { label: '+115 Points', percentage: 85 },
+      average: { label: '+60 Points', percentage: 45 },
     },
     {
       metric: 'Consistent Homework Completion Rate',
       proTutor: { label: '96% Completion', percentage: 96 },
-      average: { label: '68% Completion', percentage: 68 },
+      average: { label: '65% Completion', percentage: 65 },
     },
     {
       metric: 'College Admission Rate (Top-Choice College)',
-      proTutor: { label: '92% Accepted', percentage: 92 },
-      average: { label: '62% Accepted', percentage: 62 },
+      proTutor: { label: '90% Accepted', percentage: 90 },
+      average: { label: '70% Accepted', percentage: 70 },
     },
   ];
 
@@ -97,6 +97,25 @@ export default function ResultsComparison() {
                 </div>
               </div>
             ))}
+
+            {/* Sources */}
+            <div className="border-t border-zinc-100 pt-4 text-[11px] leading-relaxed text-zinc-500">
+              <p className="font-semibold text-zinc-600">Sources (national averages are approximate)</p>
+              <ul className="mt-1 list-disc pl-4 space-y-0.5">
+                <li>
+                  GPA: <a href="https://www.the74million.org/study-chicago-tutoring-program-delivered-huge-math-gains-personalization-may-be-the-key/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-blue">Saga Education tutoring RCTs, Chicago (The 74)</a>
+                </li>
+                <li>
+                  SAT: <a href="https://edsource.org/2017/free-khan-academy-sat-tutorials-boost-scores-study-finds/581450" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-blue">College Board / Khan Academy study (EdSource, 2017)</a>; <a href="https://fairtest.org/article/study-sat-coaching-raises-scores/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-blue">FairTest on SAT coaching</a>
+                </li>
+                <li>
+                  Homework: <a href="https://nces.ed.gov/pubs2012/2012046/chapter3_4.asp" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-blue">NCES, Student Behaviors and Afterschool Activities</a>
+                </li>
+                <li>
+                  Admissions: <a href="https://www.acenet.edu/News-Room/Pages/ACE-UCLA-HERI-CIRP-Freshman-Survey-2024.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-blue">ACE / UCLA HERI CIRP Freshman Survey</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
