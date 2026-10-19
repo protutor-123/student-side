@@ -121,8 +121,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} ProTutor360 Education Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 text-xs text-zinc-600">
-            <span className="text-zinc-600">Privacy Policy</span>
-            <span className="text-zinc-600">Terms of Service</span>
+            <a href="/privacy" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="text-zinc-500 hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
 

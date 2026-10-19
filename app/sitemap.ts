@@ -14,5 +14,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://www.ProTutor360.com/privacy',
+      lastModified: new Date('2026-10-19'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: 'https://www.ProTutor360.com/terms',
+      lastModified: new Date('2026-10-19'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
   ];
 }
