@@ -31,7 +31,7 @@ export async function submitParentPopup(
       return { success: false, error: 'Mobile number is required.' };
     }
     if (!MOBILE_REGEX.test(mobile)) {
-      return { success: false, error: 'Please enter a valid mobile number (e.g. +91 98765 43210).' };
+      return { success: false, error: 'Please enter a valid mobile number (e.g. +971 50 123 4567).' };
     }
 
     if (!email) {

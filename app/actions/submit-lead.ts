@@ -46,7 +46,7 @@ export async function submitLead(prevState: ActionState | null, formData: FormDa
       return { success: false, error: 'WhatsApp Number is required.' };
     }
     if (!WHATSAPP_REGEX.test(whatsapp)) {
-      return { success: false, error: 'Please enter a valid WhatsApp Number (e.g. +91 98765 43210).' };
+      return { success: false, error: 'Please enter a valid WhatsApp Number (e.g. +971 50 123 4567).' };
     }
 
     // 4. Fetch the webhook URL

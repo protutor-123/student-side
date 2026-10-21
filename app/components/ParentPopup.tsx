@@ -1,6 +1,7 @@
 'use client';
 
 import { useActionState, useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { submitParentPopup, ParentPopupActionState } from '@/app/actions/submit-parent-popup';
 
 const DISMISSED_KEY = 'parentPopupDismissed';
@@ -13,6 +14,15 @@ export default function ParentPopup() {
   const [visible, setVisible] = useState(false);
   const [state, formAction, pending] = useActionState(submitParentPopup, initialState);
   const formRef = useRef<HTMLFormElement>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (state?.success) {
+      localStorage.setItem(DISMISSED_KEY, 'true');
+      setVisible(false);
+      router.push('/thank-you');
+    }
+  }, [state, router]);
 
   useEffect(() => {
     if (!localStorage.getItem(DISMISSED_KEY)) {
@@ -108,7 +118,7 @@ export default function ParentPopup() {
                     id="popup-mobile"
                     name="mobile"
                     required
-                    placeholder="+91 98765 43210"
+                    placeholder="+971 50 123 4567"
                     className="w-full bg-navy-dark border border-navy-light/60 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all"
                   />
                 </div>

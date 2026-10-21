@@ -1,6 +1,7 @@
 'use client';
 
 import { useActionState, useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { submitLead, ActionState } from '@/app/actions/submit-lead';
 import { whatsappHref } from '../lib/whatsapp';
 
@@ -11,6 +12,7 @@ const initialState: ActionState = {
 export default function LeadForm() {
   const [state, formAction, pending] = useActionState(submitLead, initialState);
   const formRef = useRef<HTMLFormElement>(null);
+  const router = useRouter();
   const [role, setRole] = useState<'student' | 'parent'>('parent');
 
   // Reset form inputs upon successful submission
@@ -18,8 +20,9 @@ export default function LeadForm() {
     if (state?.success) {
       formRef.current?.reset();
       setRole('parent');
+      router.push('/thank-you');
     }
-  }, [state]);
+  }, [state, router]);
 
   return (
     <div className="relative overflow-hidden rounded-3xl border border-navy-light bg-navy text-white shadow-2xl">
@@ -130,7 +133,7 @@ export default function LeadForm() {
                   id="whatsapp"
                   name="whatsapp"
                   required
-                  placeholder="+91 98765 43210"
+                  placeholder="+971 50 123 4567"
                   className="w-full rounded-xl border border-navy-light/60 bg-navy-dark px-4 py-3 text-sm text-white placeholder-zinc-500 transition-all focus:border-accent-blue focus:outline-none focus:ring-1 focus:ring-accent-blue"
                 />
               </div>
