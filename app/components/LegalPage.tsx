@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 export const LEGAL_EMAIL = 'tutorjobs365@gmail.com';
-export const LEGAL_UPDATED = '19 October 2026';
+export const LEGAL_UPDATED = '23 October 2026';
 
 export function LegalSection({ title, children }: { title: string; children: ReactNode }) {
   return (

@@ -29,6 +29,7 @@ export default function PrivacyPage() {
           <li><strong>Class dashboard (enrolled students, parents and teachers):</strong> name, email, phone number, grade or subjects, class schedules and attendance, availability, lesson credits, and messages exchanged with our admin team.</li>
           <li><strong>Google account sign-in:</strong> when you sign in with Google we receive your name and email address to match you to the account we created for you. We do not read your Gmail, Drive or contacts.</li>
           <li><strong>Technical data:</strong> basic request data such as IP address and browser type, processed by our hosting providers to deliver and secure the site. A small browser-storage flag remembers if you dismissed our enquiry pop-up.</li>
+          <li><strong>Advertising measurement:</strong> we use Google Ads conversion tracking, which sets cookies or similar identifiers in your browser to record that you visited our site after clicking an ad and whether you submitted an enquiry form. You can control this through your browser cookie settings or Google&rsquo;s Ads Settings.</li>
         </ul>
         <p>We do not knowingly collect information directly from children under 13 without a parent or guardian&rsquo;s involvement. Parents may enquire and manage enrolment on behalf of their child.</p>
       </LegalSection>
@@ -40,7 +41,7 @@ export default function PrivacyPage() {
           <li>To track attendance and lesson credits, handle queries and improve our tutoring.</li>
           <li>To keep our services secure, prevent misuse and meet legal obligations.</li>
         </ul>
-        <p>We do not sell personal information and we do not use it for third-party advertising.</p>
+        <p>We do not sell personal information. We use Google Ads to advertise our own services and to measure which ads lead to enquiries, but we do not share your enquiry details with advertisers.</p>
       </LegalSection>
 
       <LegalSection title="Google user data">
@@ -55,7 +56,7 @@ export default function PrivacyPage() {
       <LegalSection title="Who we share it with">
         <p>We share information only with service providers that help us operate, under appropriate safeguards:</p>
         <ul>
-          <li>Google (Sheets for enquiry records, Calendar and Meet for classes, and sign-in).</li>
+          <li>Google (Sheets for enquiry records, Calendar and Meet for classes, sign-in, and Google Ads for advertising measurement).</li>
           <li>Supabase (database and authentication hosting for the class dashboard).</li>
           <li>Our website hosting and messaging providers (for example WhatsApp).</li>
           <li>The assigned teacher sees the details needed to teach a class, such as student name and schedule. Students do not see other students in a class.</li>
