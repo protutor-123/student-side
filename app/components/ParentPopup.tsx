@@ -30,14 +30,20 @@ export default function ParentPopup() {
     }
   }, []);
 
+  // Popup is compulsory: block Escape and lock page scroll while it is open.
   useEffect(() => {
+    if (!visible) return;
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') dismiss();
+      if (e.key === 'Escape') e.preventDefault();
     };
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [visible]);
 
   function dismiss() {
     localStorage.setItem(DISMISSED_KEY, 'true');
@@ -54,21 +60,10 @@ export default function ParentPopup() {
       aria-labelledby="parent-popup-heading"
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-navy-dark/70 backdrop-blur-sm" onClick={dismiss} />
+      <div className="absolute inset-0 bg-navy-dark/70 backdrop-blur-sm" />
 
       {/* Modal */}
       <div className="relative w-full max-w-md rounded-3xl bg-navy text-white shadow-2xl border border-navy-light/50 max-h-[90vh] overflow-y-auto">
-        <button
-          type="button"
-          onClick={dismiss}
-          aria-label="Close"
-          className="absolute right-4 top-4 rounded-full p-1.5 text-zinc-400 hover:text-white hover:bg-navy-light/50 transition-colors"
-        >
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-
         <div className="p-6 sm:p-8">
           {state?.success ? (
             <div className="flex flex-col items-center text-center py-8">
