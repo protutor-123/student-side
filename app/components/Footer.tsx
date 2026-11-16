@@ -62,7 +62,7 @@ export default function Footer() {
           {/* Logo / Tagline Column */}
           <div className="md:col-span-4 flex flex-col justify-start space-y-4">
             <a href="/" className="text-2xl font-bold tracking-tight text-white">
-              pro<span className="text-accent-blue font-extrabold">Tutor360</span>
+              Pro<span className="text-accent-blue font-extrabold">tutor360</span>
             </a>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
               Empowering students to achieve their full academic potential through highly-individualized 1-on-1 tutoring.
