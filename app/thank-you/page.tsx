@@ -6,7 +6,7 @@ import { whatsappHref } from '../lib/whatsapp';
 
 export const metadata: Metadata = {
   title: 'Thank You',
-  description: 'Thanks for contacting ProTutor360. We will be in touch with you shortly.',
+  description: 'Thanks for contacting Protutor360. We will be in touch with you shortly.',
   robots: { index: false, follow: false },
 };
 

@@ -3,19 +3,19 @@ import LegalPage, { LEGAL_EMAIL, LegalSection } from '../components/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'How ProTutor360 collects, uses and protects personal information from students, parents and visitors.',
-  alternates: { canonical: 'https://www.ProTutor360.com/privacy' },
+  description: 'How Protutor360 collects, uses and protects personal information from students, parents and visitors.',
+  alternates: { canonical: 'https://www.Protutor360.com/privacy' },
 };
 
 export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      intro="ProTutor360 provides online tutoring to students in the UAE. This policy explains what personal information we collect, why, and the choices you have."
+      intro="Protutor360 provides online tutoring to students in the UAE. This policy explains what personal information we collect, why, and the choices you have."
     >
       <LegalSection title="Who we are">
         <p>
-          ProTutor360 Education Inc. (&ldquo;ProTutor360&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) operates this website
+          Protutor360 Education Inc. (&ldquo;Protutor360&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) operates this website
           and the tutoring services and online class dashboard offered through it. Our office is at VUNE2821, Compass
           building - Al Hulaila, Al Hulaila Industrial Zone-FZ, Ras Al Khaimah, United Arab Emirates. Contact us at{' '}
           <a className="text-accent-blue underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>.
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
 
       <LegalSection title="Google user data">
         <p>
-          Our class scheduling uses the Google Calendar API through a single ProTutor360-managed Google account to create,
+          Our class scheduling uses the Google Calendar API through a single Protutor360-managed Google account to create,
           update and cancel class events and Meet links, with students and teachers added as attendees. We access only the
           calendar of that account and only the data needed to schedule classes. Use of information received from Google
           APIs adheres to the Google API Services User Data Policy, including its Limited Use requirements.
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
           You can ask to access, correct, export or delete your personal information, or object to how we use it, by
           emailing <a className="text-accent-blue underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>. We will
           respond within a reasonable time and in line with applicable UAE data protection law. You can revoke
-          ProTutor360&rsquo;s access to your Google account at any time in your Google Account security settings.
+          Protutor360&rsquo;s access to your Google account at any time in your Google Account security settings.
         </p>
       </LegalSection>
 

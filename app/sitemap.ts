@@ -3,25 +3,25 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://www.ProTutor360.com',
+      url: 'https://www.Protutor360.com',
       lastModified: new Date('2026-08-22'),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://www.ProTutor360.com/contact',
+      url: 'https://www.Protutor360.com/contact',
       lastModified: new Date('2026-08-22'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.ProTutor360.com/privacy',
+      url: 'https://www.Protutor360.com/privacy',
       lastModified: new Date('2026-10-19'),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: 'https://www.ProTutor360.com/terms',
+      url: 'https://www.Protutor360.com/terms',
       lastModified: new Date('2026-10-19'),
       changeFrequency: 'yearly',
       priority: 0.3,

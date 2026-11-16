@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.ProTutor360.com/sitemap.xml',
+    sitemap: 'https://www.Protutor360.com/sitemap.xml',
   };
 }

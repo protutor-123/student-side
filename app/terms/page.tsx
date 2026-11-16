@@ -3,30 +3,30 @@ import LegalPage, { LEGAL_EMAIL, LegalSection } from '../components/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'The terms that apply when you use the ProTutor360 website, tutoring services and class dashboard.',
-  alternates: { canonical: 'https://www.ProTutor360.com/terms' },
+  description: 'The terms that apply when you use the Protutor360 website, tutoring services and class dashboard.',
+  alternates: { canonical: 'https://www.Protutor360.com/terms' },
 };
 
 export default function TermsPage() {
   return (
     <LegalPage
       title="Terms of Service"
-      intro="These terms apply to the ProTutor360 website, our tutoring services and our class dashboard. By using them you agree to these terms."
+      intro="These terms apply to the Protutor360 website, our tutoring services and our class dashboard. By using them you agree to these terms."
     >
       <LegalSection title="1. Our services">
-        <p>ProTutor360 Education Inc. (&ldquo;ProTutor360&rdquo;) provides online one-to-one and small-group tutoring, test preparation and related consultations. Classes are delivered online, usually through Google Meet. Descriptions on the website are general; the specifics of your programme are agreed with our team.</p>
+        <p>Protutor360 Education Inc. (&ldquo;Protutor360&rdquo;) provides online one-to-one and small-group tutoring, test preparation and related consultations. Classes are delivered online, usually through Google Meet. Descriptions on the website are general; the specifics of your programme are agreed with our team.</p>
       </LegalSection>
 
       <LegalSection title="2. Accounts">
-        <p>Dashboard accounts are created by ProTutor360 for registered students and teachers and are accessed by signing in with the Google account we registered. You are responsible for activity on your account, must keep access to it secure, and must tell us promptly about unauthorised use. Parents or guardians are responsible for accounts of students under 18.</p>
+        <p>Dashboard accounts are created by Protutor360 for registered students and teachers and are accessed by signing in with the Google account we registered. You are responsible for activity on your account, must keep access to it secure, and must tell us promptly about unauthorised use. Parents or guardians are responsible for accounts of students under 18.</p>
       </LegalSection>
 
       <LegalSection title="3. Scheduling, attendance and lesson credits">
         <ul>
-          <li>Classes are scheduled by ProTutor360 in Dubai time (GST, UTC+4) based on availability shared by students and teachers.</li>
+          <li>Classes are scheduled by Protutor360 in Dubai time (GST, UTC+4) based on availability shared by students and teachers.</li>
           <li>Lessons are paid for with credits. A credit is deducted when a class is confirmed as attended, according to the cost set for that class.</li>
           <li>If a student is absent or cancels late, the credit may still be charged. If a teacher cannot attend or we cancel, the credit is not charged or is refunded.</li>
-          <li>Credits and fees are agreed with ProTutor360 before enrolment. Unless required by law or agreed in writing, credits are non-transferable and refunds are at our discretion.</li>
+          <li>Credits and fees are agreed with Protutor360 before enrolment. Unless required by law or agreed in writing, credits are non-transferable and refunds are at our discretion.</li>
         </ul>
       </LegalSection>
 
@@ -41,7 +41,7 @@ export default function TermsPage() {
       </LegalSection>
 
       <LegalSection title="5. Results and content">
-        <p>We work hard to support every student, but academic outcomes depend on many factors and we do not guarantee particular grades, scores or admissions. Teaching materials and the website content belong to ProTutor360 or its licensors and are provided for the student&rsquo;s personal educational use.</p>
+        <p>We work hard to support every student, but academic outcomes depend on many factors and we do not guarantee particular grades, scores or admissions. Teaching materials and the website content belong to Protutor360 or its licensors and are provided for the student&rsquo;s personal educational use.</p>
       </LegalSection>
 
       <LegalSection title="6. Privacy">
@@ -49,7 +49,7 @@ export default function TermsPage() {
       </LegalSection>
 
       <LegalSection title="7. Availability and liability">
-        <p>The service is provided &ldquo;as is&rdquo;. We may change, pause or discontinue features, and online services can be interrupted. To the extent permitted by law, ProTutor360 is not liable for indirect or consequential losses, and our total liability for any claim is limited to the fees you paid for the affected services. Nothing here limits liability that cannot be limited by law.</p>
+        <p>The service is provided &ldquo;as is&rdquo;. We may change, pause or discontinue features, and online services can be interrupted. To the extent permitted by law, Protutor360 is not liable for indirect or consequential losses, and our total liability for any claim is limited to the fees you paid for the affected services. Nothing here limits liability that cannot be limited by law.</p>
       </LegalSection>
 
       <LegalSection title="8. Governing law and changes">

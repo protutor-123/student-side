@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 const GOOGLE_ADS_ID = 'AW-18528811023';
 
-const SITE_URL = 'https://www.ProTutor360.com';
-const SITE_TITLE = 'ProTutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More';
+const SITE_URL = 'https://www.Protutor360.com';
+const SITE_TITLE = 'Protutor360 | Online Tutoring in UAE for IB, IGCSE, CBSE & More';
 const SITE_DESCRIPTION =
   "Personalized 1-on-1 online tutoring for students in the UAE across IB, IGCSE, CBSE, ICSE and more. Expert mentors, custom learning pathways, and proven results.";
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: '%s | ProTutor360',
+    template: '%s | Protutor360',
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    siteName: 'ProTutor360',
+    siteName: 'Protutor360',
     locale: 'en_AE',
     type: 'website',
     images: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/hero-illustration.jpg`,
         width: 1200,
         height: 630,
-        alt: 'ProTutor360 – Online Tutoring in UAE',
+        alt: 'Protutor360 – Online Tutoring in UAE',
       },
     ],
   },
@@ -114,7 +114,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': ['EducationalOrganization', 'LocalBusiness'],
-              name: 'ProTutor360',
+              name: 'Protutor360',
               url: SITE_URL,
               logo: `${SITE_URL}/logo.png`,
               description: SITE_DESCRIPTION,

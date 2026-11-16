@@ -40,16 +40,16 @@ const CONTACT_LINKS = [
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
+    'Get in touch with Protutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
   alternates: {
-    canonical: 'https://www.ProTutor360.com/contact',
+    canonical: 'https://www.Protutor360.com/contact',
   },
   openGraph: {
-    title: 'Contact Us | ProTutor360',
+    title: 'Contact Us | Protutor360',
     description:
-      'Get in touch with ProTutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
-    url: 'https://www.ProTutor360.com/contact',
-    siteName: 'ProTutor360',
+      'Get in touch with Protutor360 for personalized online tutoring in the UAE. Message us on WhatsApp or visit our Ras Al Khaimah office.',
+    url: 'https://www.Protutor360.com/contact',
+    siteName: 'Protutor360',
     locale: 'en_AE',
     type: 'website',
   },
