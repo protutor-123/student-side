@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState, useTransition } from 'react';
+import { useCallback, useEffect, useRef, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { marked } from 'marked';
 import type { Post, PostStatus } from '@/lib/posts';
 import { isValidSlug, slugify } from '@/lib/slug';
 import { deletePostAction, savePostAction, uploadImageAction } from '../actions';
+import RichEditor from './RichEditor';
 
 type Props = { initial?: Post; imageBase: string; siteUrl: string };
 
@@ -40,6 +40,7 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
   const [date, setDate] = useState(initial?.date || today());
   const [tags, setTags] = useState((initial?.tags ?? []).join(', '));
   const [cover, setCover] = useState(initial?.cover ?? '');
+  const [coverPreview, setCoverPreview] = useState<string | null>(null);
   const [body, setBody] = useState(initial?.body ?? '');
   const [status, setStatus] = useState<PostStatus>(initial?.status ?? 'draft');
   const [sha, setSha] = useState<string | undefined>(initial?.sha);
@@ -48,8 +49,8 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
   const [uploading, setUploading] = useState(false);
   const [pending, startTransition] = useTransition();
   // Images uploaded in this session: repo path -> local object URL (repo copy may not be fetchable yet).
-  const [localImages, setLocalImages] = useState<Record<string, string>>({});
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  // A ref so the editor can resolve a path synchronously right after upload.
+  const localImages = useRef<Record<string, string>>({});
 
   useEffect(() => {
     if (!dirty) return;
@@ -70,14 +71,10 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
     if (isNew && !slugTouched) setSlug(slugify(v));
   };
 
-  const resolveSrc = (src: string) =>
-    localImages[src] ?? (src.startsWith('/blog/') ? `${imageBase}${src}` : src);
-
-  const previewHtml = useMemo(() => {
-    const html = marked.parse(body, { async: false });
-    return html.replace(/src="(\/blog\/[^"]+)"/g, (_, src: string) => `src="${resolveSrc(src)}"`);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [body, localImages, imageBase]);
+  const resolveSrc = useCallback(
+    (src: string) => localImages.current[src] ?? (src.startsWith('/blog/') ? `${imageBase}${src}` : src),
+    [imageBase],
+  );
 
   async function upload(file: File): Promise<string | null> {
     if (!isValidSlug(slug)) {
@@ -96,7 +93,7 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
         setMessage({ kind: 'error', text: res.error });
         return null;
       }
-      setLocalImages((m) => ({ ...m, [res.path]: URL.createObjectURL(compressed) }));
+      localImages.current[res.path] = URL.createObjectURL(compressed);
       return res.path;
     } catch {
       setMessage({ kind: 'error', text: 'Could not process that image.' });
@@ -109,18 +106,9 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
   async function onCoverFile(file: File | undefined) {
     if (!file) return;
     const path = await upload(file);
-    if (path) edit(setCover)(path);
-  }
-
-  async function onInlineImage(file: File | undefined) {
-    if (!file) return;
-    const path = await upload(file);
     if (!path) return;
-    const ta = textareaRef.current;
-    const alt = file.name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ');
-    const snippet = `\n![${alt}](${path})\n`;
-    const pos = ta?.selectionStart ?? body.length;
-    edit(setBody)(body.slice(0, pos) + snippet + body.slice(pos));
+    setCoverPreview(URL.createObjectURL(file));
+    edit(setCover)(path);
   }
 
   function save(nextStatus: PostStatus) {
@@ -296,7 +284,7 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
           <div className="mt-1 flex items-center gap-3">
             {cover && (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={resolveSrc(cover)} alt="" className="h-14 w-24 rounded-md object-cover" />
+              <img src={coverPreview ?? (cover.startsWith('/blog/') ? `${imageBase}${cover}` : cover)} alt="" className="h-14 w-24 rounded-md object-cover" />
             )}
             <label className="cursor-pointer rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm hover:bg-zinc-50">
               {uploading ? 'Uploading…' : cover ? 'Replace' : 'Upload'}
@@ -312,7 +300,7 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
               />
             </label>
             {cover && (
-              <button type="button" onClick={() => edit(setCover)('')} className="text-sm text-zinc-500 hover:text-red-600">
+              <button type="button" onClick={() => { setCoverPreview(null); edit(setCover)(''); }} className="text-sm text-zinc-500 hover:text-red-600">
                 Remove
               </button>
             )}
@@ -320,42 +308,13 @@ export default function PostEditor({ initial, imageBase, siteUrl }: Props) {
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
-        <div className="flex flex-col rounded-2xl border border-zinc-200 bg-white">
-          <div className="flex items-center justify-between border-b border-zinc-100 px-4 py-2">
-            <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Markdown</span>
-            <label className="cursor-pointer text-sm text-accent-blue hover:underline">
-              {uploading ? 'Uploading…' : '+ Insert image'}
-              <input
-                type="file"
-                accept="image/*"
-                className="hidden"
-                disabled={busy}
-                onChange={(e) => {
-                  onInlineImage(e.target.files?.[0]);
-                  e.target.value = '';
-                }}
-              />
-            </label>
-          </div>
-          <textarea
-            ref={textareaRef}
-            value={body}
-            onChange={(e) => edit(setBody)(e.target.value)}
-            placeholder={'## A heading\n\nWrite your post here. **Bold**, *italic*, [links](https://example.com), lists with - item.'}
-            className="min-h-[60vh] flex-1 resize-y rounded-b-2xl p-4 font-mono text-sm leading-relaxed outline-none"
-          />
-        </div>
-        <div className="rounded-2xl border border-zinc-200 bg-white">
-          <div className="border-b border-zinc-100 px-4 py-2">
-            <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Preview</span>
-          </div>
-          <div className="max-h-[75vh] overflow-y-auto p-6">
-            {title && <h1 className="mb-6 text-3xl font-extrabold tracking-tight text-navy">{title}</h1>}
-            <div className="blog-prose" dangerouslySetInnerHTML={{ __html: previewHtml }} />
-          </div>
-        </div>
-      </div>
+      <RichEditor
+        initialMarkdown={initial?.body ?? ''}
+        onChange={edit(setBody)}
+        onUploadImage={upload}
+        resolveSrc={resolveSrc}
+        uploading={uploading}
+      />
     </main>
   );
 }

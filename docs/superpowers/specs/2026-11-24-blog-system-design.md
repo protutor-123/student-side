@@ -30,7 +30,7 @@ Add a blog to the public site and a separate, password-protected dashboard for w
 - **Pages:**
   - `/login`
   - `/` — all posts (title, status, date) with Edit / Delete, "New post".
-  - `/new`, `/edit/[slug]` — title, slug, excerpt, date, tags (comma-separated), cover upload, Markdown textarea + live preview, inline image upload (inserts Markdown), buttons: Save draft / Publish / Unpublish.
+  - `/new`, `/edit/[slug]` — title, slug, excerpt, date, tags (comma-separated), cover upload, toolbar WYSIWYG editor (Tiptap + @tiptap/markdown; headings, marks, lists, quote, code, link, image upload/paste/drop, tables, undo/redo, raw Markdown toggle, word count), buttons: Save draft / Publish / Unpublish.
 - **GitHub layer (`lib/github.ts`):** list, get (content + sha), put (create/update with sha), delete. Updates send the file's `sha`; a 409/422 mismatch surfaces as "This post changed since you opened it — reload."
 - **Delete:** removes the `.md` file (images left in place; harmless).
 - **Env:** `ADMIN_PASSWORD`, `SESSION_SECRET`, `GITHUB_TOKEN`, `GITHUB_REPO=protutor-123/student-side`, `GITHUB_BRANCH=master`, `SITE_URL`.
