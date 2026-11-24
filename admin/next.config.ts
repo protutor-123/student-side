@@ -1,11 +1,7 @@
-import path from 'node:path';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  // This app lives in a subfolder of the student-side repo; keep it self-contained.
-  turbopack: { root: path.join(__dirname) },
-  outputFileTracingRoot: path.join(__dirname),
   experimental: {
     serverActions: { bodySizeLimit: '4mb' },
   },
