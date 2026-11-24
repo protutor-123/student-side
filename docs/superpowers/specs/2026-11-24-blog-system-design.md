@@ -7,7 +7,7 @@ Add a blog to the public site and a separate, password-protected dashboard for w
 
 ## Architecture
 - **Storage:** Markdown files in this repo (`protutor-123/student-side`). No database.
-- **Admin app:** separate Next.js project `blog-admin` (own repo, own Vercel project). Reads/writes post files via the GitHub Contents API using a fine-grained token scoped to `student-side` (Contents: read/write). Token lives only in the admin app's server env.
+- **Admin app:** separate Next.js app in `admin/` of this repo (own package.json, own Vercel project with Root Directory `admin`; excluded from the root tsconfig/eslint). Reads/writes post files via the GitHub Contents API using a fine-grained token scoped to `student-side` (Contents: read/write). Token lives only in the admin app's server env.
 - **Publish flow:** admin commits to `master` → Vercel rebuilds student-side → post live in ~1–2 min.
 
 ## Content format (student-side)
@@ -25,7 +25,7 @@ Add a blog to the public site and a separate, password-protected dashboard for w
 - "Blog" link in navbar and footer.
 - Fully static.
 
-## Admin app (`blog-admin`)
+## Admin app (`admin/`)
 - **Auth:** single `ADMIN_PASSWORD` env var. Login server action compares in constant time, sets an HttpOnly, Secure, SameSite=Lax cookie holding a JWT signed (HS256, `jose`) with `SESSION_SECRET`, 7-day expiry. Failed login waits ~1s. `proxy.ts` redirects unauthenticated requests to `/login`; every server action re-verifies the session (proxy is only an optimistic check).
 - **Pages:**
   - `/login`
