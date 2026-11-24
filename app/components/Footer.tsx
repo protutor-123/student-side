@@ -50,6 +50,7 @@ export default function Footer() {
       items: [
         { label: 'Our Philosophy', href: '/#about' },
         { label: 'How We Work', href: '/#how-we-work' },
+        { label: 'Blog', href: '/blog' },
         { label: 'Contact Us', href: '/contact' },
       ],
     },

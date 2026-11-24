@@ -12,6 +12,7 @@ export default function Navbar() {
     { label: 'Results', href: '/#results' },
     { label: 'How We Work', href: '/#how-we-work' },
     { label: 'About', href: '/#about' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ];
 
