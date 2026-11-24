@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { whatsappHref } from '../lib/whatsapp';
 
@@ -20,8 +21,11 @@ export default function Navbar() {
         <div className="flex h-18 items-center justify-between">
           {/* Logo / Wordmark */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold tracking-tight text-navy">
-              Pro<span className="text-accent-blue font-extrabold">tutor360</span>
+            <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold tracking-tight text-navy">
+              <Image src="/logo-mark.png" alt="Protutor360 logo" width={268} height={268} className="h-11 w-11 shrink-0" priority />
+              <span>
+                Pro<span className="text-accent-blue font-extrabold">tutor360</span>
+              </span>
             </a>
           </div>
 

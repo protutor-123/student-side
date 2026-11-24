@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { whatsappHref } from '../lib/whatsapp';
 
 const SOCIALS = [
@@ -61,8 +62,11 @@ export default function Footer() {
 
           {/* Logo / Tagline Column */}
           <div className="md:col-span-4 flex flex-col justify-start space-y-4">
-            <a href="/" className="text-2xl font-bold tracking-tight text-white">
-              Pro<span className="text-accent-blue font-extrabold">tutor360</span>
+            <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold tracking-tight text-white">
+              <Image src="/logo-mark.png" alt="Protutor360 logo" width={268} height={268} className="h-12 w-12 shrink-0" />
+              <span>
+                Pro<span className="text-accent-blue font-extrabold">tutor360</span>
+              </span>
             </a>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
               Empowering students to achieve their full academic potential through highly-individualized 1-on-1 tutoring.
