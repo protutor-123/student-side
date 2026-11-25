@@ -87,7 +87,7 @@ export async function deletePostAction(slug: string): Promise<{ error: string } 
   await requireAdmin();
   try {
     const post = await getPost(slug);
-    if (post) await removePost(slug, post.sha, post.title);
+    if (post) await removePost(slug, post.sha, post.title, post.status === 'published');
   } catch (err) {
     return { error: errorMessage(err) };
   }

@@ -46,16 +46,6 @@ async function fail(res: Response, action: string): Promise<never> {
 
 const branch = () => env('GITHUB_BRANCH');
 
-export type RepoFile = { path: string; name: string; sha: string };
-
-export async function listDir(dir: string): Promise<RepoFile[]> {
-  const res = await gh(`${dir}?ref=${encodeURIComponent(branch())}`);
-  if (res.status === 404) return [];
-  if (!res.ok) await fail(res, 'list files');
-  const items = (await res.json()) as Array<RepoFile & { type: string }>;
-  return items.filter((i) => i.type === 'file').map(({ path, name, sha }) => ({ path, name, sha }));
-}
-
 export async function getFile(path: string): Promise<{ text: string; sha: string } | null> {
   const res = await gh(`${path}?ref=${encodeURIComponent(branch())}`);
   if (res.status === 404) return null;
@@ -78,6 +68,46 @@ export async function putFile(path: string, content: Buffer | string, message: s
   if (!res.ok) await fail(res, 'save file');
   const data = (await res.json()) as { content: { sha: string } };
   return data.content.sha;
+}
+
+/**
+ * Reads every file in a directory in ONE GraphQL request (instead of one REST call per file).
+ * Returns text files only; binary files come back with text null and are skipped.
+ */
+export async function readDirTexts(dir: string): Promise<Array<{ name: string; text: string; sha: string }>> {
+  const [owner, name] = env('GITHUB_REPO').split('/');
+  const res = await fetch(`${API}/graphql`, {
+    method: 'POST',
+    cache: 'no-store',
+    headers: {
+      Authorization: `Bearer ${env('GITHUB_TOKEN')}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      query: `query($owner: String!, $name: String!, $expr: String!) {
+        repository(owner: $owner, name: $name) {
+          object(expression: $expr) {
+            ... on Tree { entries { name type object { ... on Blob { oid text } } } }
+          }
+        }
+      }`,
+      variables: { owner, name, expr: `${branch()}:${dir}` },
+    }),
+  });
+  if (!res.ok) await fail(res, 'list posts');
+  const json = (await res.json()) as {
+    errors?: Array<{ message: string }>;
+    data?: {
+      repository: {
+        object: { entries: Array<{ name: string; type: string; object: { oid: string; text: string | null } | null }> } | null;
+      } | null;
+    };
+  };
+  if (json.errors?.length) throw new GitHubError(`GitHub failed to list posts: ${json.errors[0].message}`);
+  const entries = json.data?.repository?.object?.entries ?? [];
+  return entries
+    .filter((e) => e.type === 'blob' && e.object?.text != null)
+    .map((e) => ({ name: e.name, text: e.object!.text!, sha: e.object!.oid }));
 }
 
 export async function deleteFile(path: string, sha: string, message: string): Promise<void> {
