@@ -11,14 +11,15 @@ tags:
   - IBDP Exam Prep Guide
   - IBDP Exam Prep Guide for Students
   - IB Diploma Programme May 2027
+  - IB tutor Dubai
+  - IBDP May 2027 exam prep UAE
+  - IB Math AA HL tutor online
 status: published
 ---
 
 IB Diploma Programme May 2027 IBDP Exam Prep Guide for Students | Protutor360
 
 Preparing for the May 2027 IB exams in Dubai? Discover key dates, new 2027 syllabus changes, and a step-by-step revision plan for January mocks and finals.
-
-Target Keywords: IB tutor Dubai, IBDP May 2027 exam prep UAE, IB Math AA HL tutor online
 
 How Dubai IBDP Students Can Turn January Mocks into 40+ Points for May 2027
 
