@@ -1,8 +1,6 @@
 ---
 title: IB Diploma Programme May 2027
-excerpt: >-
-  I B Diploma Programme May 2027 IBDP Exam Prep Guide for Students |
-  Protutor360.
+excerpt: ''
 date: '2026-11-25'
 cover: ''
 tags:
