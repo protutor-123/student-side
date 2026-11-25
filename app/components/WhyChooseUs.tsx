@@ -1,6 +1,6 @@
 const POINTS = [
   'IBDP-certified & subject-specialist tutors',
-  '1-on-1 personalized online IB tutoring in Dubai',
+  '1-on-1 personalized online IB tutoring globally',
   'Support across all HL & SL subjects, including TOK, EE & IA',
   'Flexible scheduling that fits your IB calendar',
   'Assessment-aligned strategies with past papers & mark schemes',
